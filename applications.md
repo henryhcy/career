@@ -1,21 +1,20 @@
 # Applications
 
-Status vocabulary: `applied` → `screen` → `interviewing` → `offer` / `rejected` / `withdrawn` / `ghosted`
+<!-- GENERATED FILE — do not edit by hand.
+     Source of truth is applications.json. Regenerate with ./bin/render
+     or by saving from the board (./bin/board). -->
+
+_Last generated 2026-07-15 — 0 active, 0 leads, 0 closed._
 
 ## Active
 
-| Date applied | Company | Role | Source | Status | Last touch | Next step |
-| --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+_Nothing in flight._
+
+## Leads
+
+_No leads logged._
 
 ## Closed
 
-| Date applied | Company | Role | Outcome | Notes |
-| --- | --- | --- | --- | --- |
-| | | | | |
+_Nothing closed yet._
 
-## Leads (not yet applied)
-
-| Company | Role | Why interesting | Deadline | Referral? |
-| --- | --- | --- | --- | --- |
-| | | | | |

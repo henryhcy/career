@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Open the job search board in your browser.
+#
+#   ./bin/board            http://127.0.0.1:4173
+#   BOARD_PORT=5000 ./bin/board
+#
+# Edits save straight to applications.json / habits.json, so commit when done.
+# Python 3 stdlib only — no pip install. Works on Windows (Git Bash) and macOS.
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# Windows installs python as `python` or the `py` launcher; macOS/Linux as python3.
+PY=""
+for c in python3 python py; do
+  if command -v "$c" >/dev/null 2>&1; then
+    case "$("$c" -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>/dev/null || true)" in
+      3.*) PY="$c"; break ;;
+    esac
+  fi
+done
+
+if [ -z "$PY" ]; then
+  echo "error: Python 3 not found on PATH." >&2
+  echo "Install it from python.org (tick 'Add to PATH' on Windows), then re-run." >&2
+  exit 1
+fi
+
+exec "$PY" "$REPO_ROOT/board/server.py"

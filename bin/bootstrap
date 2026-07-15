@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 # Set up this job search environment on a new machine.
 #
-#   git clone https://github.com/henryhcy/career-docs.git   # optional, done for you
 #   git clone https://github.com/henryhcy/career.git
 #   cd career && ./bin/bootstrap
 #
-# Idempotent — safe to re-run. Everything it does is recorded here rather than
-# left as undocumented local state, because none of it lives in git:
+# Runs on Windows (Git Bash), macOS, and Linux. Idempotent — safe to re-run,
+# and re-running repairs a half-broken setup.
+#
+# Everything here is state git cannot carry, which is why it's a script and not
+# a paragraph in the README:
 #   - the `overleaf` remote (git never tracks .git/config)
-#   - the `docs/` symlink (gitignored)
-#   - the credential helper (machine-specific by design)
+#   - the credential helper (differs per OS)
 set -euo pipefail
 
 OVERLEAF_PROJECT_ID="6a580fd1b9cdc025e543a7f7"
@@ -19,7 +20,17 @@ DOCS_GITHUB="https://github.com/henryhcy/career-docs.git"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DOCS="$(cd "$REPO_ROOT/.." && pwd)/career-docs"
 
+case "$(uname -s)" in
+  Darwin)                 OS=mac ;;
+  Linux)                  OS=linux ;;
+  MINGW*|MSYS*|CYGWIN*)   OS=windows ;;
+  *)                      OS=unknown ;;
+esac
+
 say() { printf '\n\033[1m%s\033[0m\n' "$1"; }
+
+say "platform"
+echo "   $(uname -s) -> $OS"
 
 # --- 1. career-docs clone ---------------------------------------------------
 say "1. career-docs"
@@ -40,28 +51,52 @@ else
   echo "   added -> $OVERLEAF_URL"
 fi
 
-# --- 3. docs symlink --------------------------------------------------------
-say "3. docs/ symlink"
-ln -sfn "$DOCS" "$REPO_ROOT/docs"
-echo "   $REPO_ROOT/docs -> $DOCS"
+# --- 3. line endings --------------------------------------------------------
+# Belt and braces: .gitattributes pins eol=lf, but a repo cloned before that
+# landed can still hold CRLF in the index, which breaks bash scripts.
+say "3. line endings"
+if [ "$OS" = windows ]; then
+  git -C "$REPO_ROOT" config core.autocrlf false
+  git -C "$DOCS" config core.autocrlf false
+  echo "   core.autocrlf=false in both repos (CRLF breaks bin/* under bash)"
+else
+  echo "   not windows, nothing to do"
+fi
 
 # --- 4. credential helper ---------------------------------------------------
 say "4. credential helper"
-if [ -n "$(git config --global credential.helper || true)" ]; then
-  echo "   already set: $(git config --global credential.helper)"
+existing="$(git config --global credential.helper || true)"
+if [ -n "$existing" ]; then
+  echo "   already set: $existing"
 else
-  case "$(uname -s)" in
-    Darwin) helper=osxkeychain ;;
-    Linux)  helper=$(command -v git-credential-libsecret >/dev/null 2>&1 \
-                     && echo libsecret || echo "cache --timeout=86400") ;;
-    *)      helper="cache --timeout=86400" ;;
+  case "$OS" in
+    mac)     helper=osxkeychain ;;
+    windows) helper=manager ;;  # Git Credential Manager, ships with Git for Windows
+    linux)   helper=$(command -v git-credential-libsecret >/dev/null 2>&1 \
+                      && echo libsecret || echo "cache --timeout=86400") ;;
+    *)       helper="cache --timeout=86400" ;;
   esac
   git config --global credential.helper "$helper"
   echo "   set: $helper"
 fi
 
-# --- 5. auth check ----------------------------------------------------------
-say "5. overleaf auth"
+# --- 5. python (for the board) ----------------------------------------------
+say "5. python"
+PY=""
+for c in python3 python py; do
+  if command -v "$c" >/dev/null 2>&1; then
+    v="$("$c" -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>/dev/null || true)"
+    case "$v" in 3.*) PY="$c"; break ;; esac
+  fi
+done
+if [ -n "$PY" ]; then
+  echo "   found: $PY ($("$PY" -c 'import sys; print(sys.version.split()[0])'))"
+else
+  echo "   NOT FOUND — ./bin/board won't run. Install Python 3 and re-run this."
+fi
+
+# --- 6. auth check ----------------------------------------------------------
+say "6. overleaf auth"
 if GIT_TERMINAL_PROMPT=0 git -C "$DOCS" ls-remote overleaf >/dev/null 2>&1; then
   echo "   token works — you're done."
 else
@@ -76,4 +111,8 @@ MSG
 fi
 
 say "done"
-echo "Sync anytime with: $REPO_ROOT/bin/docs-sync"
+cat <<MSG
+career-docs   $DOCS
+sync it       $REPO_ROOT/bin/docs-sync
+open board    $REPO_ROOT/bin/board
+MSG

@@ -2,5 +2,3 @@
 *.swp
 ~$*
 
-# Local symlink to the sibling career-docs repo (see CLAUDE.md)
-docs

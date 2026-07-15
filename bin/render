@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Regenerate applications.md from applications.json.
+# The board does this automatically on save; run it by hand after editing the
+# JSON directly.
+set -euo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+PY=""
+for c in python3 python py; do
+  if command -v "$c" >/dev/null 2>&1; then
+    case "$("$c" -c 'import sys; print("%d.%d" % sys.version_info[:2])' 2>/dev/null || true)" in
+      3.*) PY="$c"; break ;;
+    esac
+  fi
+done
+[ -n "$PY" ] || { echo "error: Python 3 not found on PATH." >&2; exit 1; }
+
+exec "$PY" "$REPO_ROOT/board/render.py"

@@ -1,0 +1,10 @@
+# Force LF in the working tree on every platform.
+#
+# Git for Windows defaults to core.autocrlf=true, which rewrites LF to CRLF on
+# checkout. A CRLF shebang makes bash fail with "bad interpreter: No such file
+# or directory" — so without this, bin/* is broken on Windows before it runs.
+* text=auto eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary

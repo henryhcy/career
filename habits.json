@@ -1,0 +1,9 @@
+{
+  "habits": [
+    { "id": "apply", "label": "Apply to 2 roles" },
+    { "id": "follow-up", "label": "Send one follow-up" },
+    { "id": "leetcode", "label": "One practice problem" },
+    { "id": "outreach", "label": "Reach out to one person" }
+  ],
+  "log": {}
+}

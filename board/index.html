@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job search board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Job search</h1>
+    <span class="date" id="today"></span>
+    <span class="spacer"></span>
+    <button id="add" class="primary">Add application</button>
+  </header>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="wrap">
+    <main>
+      <div class="board" id="board"></div>
+      <details class="closed" id="closed-wrap">
+        <summary id="closed-summary">Closed</summary>
+        <div class="closed-list" id="closed-list"></div>
+      </details>
+    </main>
+
+    <aside class="panel">
+      <h2>Daily checks</h2>
+      <div class="sub" id="habit-sub"></div>
+      <div id="habits"></div>
+
+      <div class="add-habit">
+        <input id="habit-new" placeholder="Add a daily check" maxlength="60">
+        <button id="habit-add">Add</button>
+      </div>
+
+      <div class="history" id="history"></div>
+    </aside>
+  </div>
+
+  <dialog id="dlg">
+    <form method="dialog" id="form">
+      <h2 id="dlg-title">Application</h2>
+
+      <div class="field">
+        <label for="f-company">Company</label>
+        <input id="f-company" required>
+      </div>
+      <div class="field">
+        <label for="f-role">Role</label>
+        <input id="f-role">
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="f-status">Status</label>
+          <select id="f-status"></select>
+        </div>
+        <div class="field">
+          <label for="f-source">Source</label>
+          <input id="f-source" placeholder="referral, careers page…">
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="f-applied">Applied</label>
+          <input id="f-applied" type="date">
+        </div>
+        <div class="field">
+          <label for="f-lastTouch">Last touch</label>
+          <input id="f-lastTouch" type="date">
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="f-nextStep">Next step</label>
+          <input id="f-nextStep" placeholder="follow up, onsite…">
+        </div>
+        <div class="field">
+          <label for="f-nextStepDate">Next step date</label>
+          <input id="f-nextStepDate" type="date">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-link">Link</label>
+        <input id="f-link" type="url" placeholder="https://">
+      </div>
+      <div class="field">
+        <label for="f-notes">Notes</label>
+        <textarea id="f-notes"></textarea>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="del" class="danger">Delete</button>
+        <span class="spacer"></span>
+        <button type="button" id="cancel">Cancel</button>
+        <button type="submit" class="primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="saving" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
