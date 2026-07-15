@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# Sync career-docs between Overleaf and GitHub.
+#
+#   docs-sync            pull Overleaf edits, then push to both remotes
+#   docs-sync -m "msg"   commit staged+unstaged changes first, then the above
+#
+# Overleaf's bridge rejects non-fast-forward pushes, so this always pulls first.
+set -euo pipefail
+
+DOCS="${CAREER_DOCS:-$HOME/Downloads/career-docs}"
+
+msg=""
+while getopts "m:" opt; do
+  case $opt in
+    m) msg="$OPTARG" ;;
+    *) echo "usage: docs-sync [-m \"commit message\"]" >&2; exit 2 ;;
+  esac
+done
+
+[ -d "$DOCS/.git" ] || { echo "error: no git repo at $DOCS" >&2; exit 1; }
+cd "$DOCS"
+
+if [ -n "$(git status --porcelain)" ]; then
+  if [ -z "$msg" ]; then
+    echo "error: uncommitted changes in $DOCS — pass -m \"message\" to commit them" >&2
+    git status --short >&2
+    exit 1
+  fi
+  git add -A
+  git commit -q -m "$msg"
+  echo "committed: $msg"
+fi
+
+echo "pulling from overleaf..."
+if ! git pull --ff-only overleaf main; then
+  cat >&2 <<'MSG'
+
+error: overleaf and local have diverged — both sides changed.
+Resolve by hand, then re-run:
+
+    cd ~/Downloads/career-docs
+    git pull --no-rebase overleaf main   # merge and fix conflicts
+    git push overleaf main && git push origin main
+MSG
+  exit 1
+fi
+
+echo "pushing to overleaf..."
+git push overleaf main
+echo "pushing to github..."
+git push origin main
+
+echo
+echo "in sync — all three at $(git rev-parse --short HEAD)"

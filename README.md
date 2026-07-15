@@ -1,23 +1,49 @@
 # Career
 
-Private working repo for my job search — applications, materials, research, and prep.
+Private working repo for my job search — applications, research, and prep.
+This is the hub; I work here.
+
+## The other half: career-docs
+
+Resume and cover letter LaTeX sources live in a sibling repo,
+[career-docs](https://github.com/henryhcy/career-docs), symlinked here as `docs/`.
+That repo is git-synced with an Overleaf project, so I edit in the browser and the
+changes come back down. `bin/docs-sync` keeps Overleaf and GitHub in lockstep.
+
+```
+career/          <- you are here: tracker, research, notes
+  docs/  ------> career-docs/   <- LaTeX  <--git bridge-->  Overleaf
+```
+
+See [CLAUDE.md](CLAUDE.md) for how the pieces fit and the rules for touching them.
 
 ## Layout
 
 | Path | What lives here |
 | --- | --- |
 | `applications.md` | Master tracker for every role I've applied to |
-| `resumes/` | Resume versions, tailored per role or role-type |
-| `cover-letters/` | Cover letters, plus any reusable snippets |
 | `companies/` | One note per company: research, contacts, comp, impressions |
 | `notes/` | Interview prep, behavioral stories, technical review, retros |
+| `resumes/` | Reference and archived PDFs — what I actually sent, and when |
+| `bin/docs-sync` | Syncs `career-docs` between Overleaf and GitHub |
+| `docs/` | Symlink to `career-docs` (gitignored, local only) |
+
+Source vs. output: LaTeX sources live in `career-docs` and compile in Overleaf.
+`resumes/` here is for finished PDFs worth keeping — the version you sent to a
+specific company, or a prior CV kept for reference.
 
 ## How I use this
 
-- Log a role in `applications.md` the same day I apply, so the status column stays honest.
-- Name tailored resumes `resumes/<company>-<role>.pdf` so it's obvious which version went where.
-- Start a `companies/<company>.md` note as soon as a first conversation is scheduled.
-- After every interview, write a quick retro in `notes/` while it's fresh — what was asked, what I fumbled, what to tighten.
+Applying to a company touches both repos:
+
+1. Log the role in `applications.md` the same day, so the status column stays honest.
+2. Start `companies/<company>.md` from the template for research and contacts.
+3. Copy `docs/cover-letters/_template.tex` to `docs/cover-letters/<company>.tex`, then
+   run `bin/docs-sync -m "add <company> letter"` to push it to Overleaf.
+4. Write the letter in Overleaf, compile, download the PDF, send it.
+
+After every interview, write a retro in `notes/` while it's fresh — what was asked,
+what I fumbled, what to tighten.
 
 ## A note on what goes in here
 
