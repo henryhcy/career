@@ -6,11 +6,11 @@ This is the hub of a two-repo job search setup. Read this before acting.
 
 | Repo | Path | Holds |
 | --- | --- | --- |
-| `career` (this one) | `~/Downloads/career` | Tracker, company research, interview notes, archived PDFs. The hub — work starts here. |
-| `career-docs` | `~/Downloads/career-docs` | LaTeX **sources** for the resume and cover letters. Also symlinked as `./docs`. |
+| `career` (this one) | `~/Downloads/career` | Tracker, company research, interview notes. The hub — work starts here. |
+| `career-docs` | `~/Downloads/career-docs` | LaTeX sources for the resume and cover letters. Also symlinked as `./docs`. |
 
-The split is source vs. output: `.tex` belongs in `career-docs`, finished `.pdf`
-worth keeping belongs in `career/resumes/`. Never put `.tex` in this repo.
+Documents live in `career-docs`, never here — no `.tex`, no resume or cover letter
+PDFs in this repo. This one is prose: what you applied to, what you learned, what to prep.
 
 `career-docs` is **not** a submodule — it's an independent sibling repo. Don't try to
 commit it from here; `cd` into it and commit there.

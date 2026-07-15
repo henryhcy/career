@@ -24,13 +24,11 @@ See [CLAUDE.md](CLAUDE.md) for how the pieces fit and the rules for touching the
 | `applications.md` | Master tracker for every role I've applied to |
 | `companies/` | One note per company: research, contacts, comp, impressions |
 | `notes/` | Interview prep, behavioral stories, technical review, retros |
-| `resumes/` | Reference and archived PDFs — what I actually sent, and when |
 | `bin/docs-sync` | Syncs `career-docs` between Overleaf and GitHub |
 | `docs/` | Symlink to `career-docs` (gitignored, local only) |
 
-Source vs. output: LaTeX sources live in `career-docs` and compile in Overleaf.
-`resumes/` here is for finished PDFs worth keeping — the version you sent to a
-specific company, or a prior CV kept for reference.
+No documents live here — resume and cover letters are in `career-docs`, and
+compiled PDFs get downloaded from Overleaf when you need to send one.
 
 ## How I use this
 
