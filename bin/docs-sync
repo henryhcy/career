@@ -7,7 +7,10 @@
 # Overleaf's bridge rejects non-fast-forward pushes, so this always pulls first.
 set -euo pipefail
 
-DOCS="${CAREER_DOCS:-$HOME/Downloads/career-docs}"
+# Resolve career-docs as a sibling of this repo, wherever it was cloned.
+# Override with CAREER_DOCS if you keep it somewhere else.
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DOCS="${CAREER_DOCS:-$(cd "$REPO_ROOT/.." && pwd)/career-docs}"
 
 msg=""
 while getopts "m:" opt; do
@@ -17,8 +20,12 @@ while getopts "m:" opt; do
   esac
 done
 
-[ -d "$DOCS/.git" ] || { echo "error: no git repo at $DOCS" >&2; exit 1; }
+[ -d "$DOCS/.git" ] || {
+  echo "error: no git repo at $DOCS — run ./bin/bootstrap first" >&2; exit 1; }
 cd "$DOCS"
+
+git remote get-url overleaf >/dev/null 2>&1 || {
+  echo "error: no 'overleaf' remote in $DOCS — run ./bin/bootstrap first" >&2; exit 1; }
 
 if [ -n "$(git status --porcelain)" ]; then
   if [ -z "$msg" ]; then

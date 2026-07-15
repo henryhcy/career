@@ -33,8 +33,24 @@ git push overleaf main && git push origin main
 Or just run `./bin/docs-sync` from this repo, which pulls Overleaf-side edits and
 pushes everything to both remotes.
 
-Auth is a token in the macOS keychain. Never ask for it, never print it, never
-commit it. If a push fails with an auth error, say so and let Chengyang re-add it.
+Auth is a token in the OS keychain. Never ask for it, never print it, never commit
+it. If a push fails with an auth error, say so and point at `./bin/bootstrap`,
+which prints the re-add command. Don't try to work around it.
+
+## Chengyang works across several machines
+
+Assume this checkout may be fresh. Nothing may be set up locally yet.
+
+- If `career-docs` is missing, the `overleaf` remote is absent, or `docs/` is a
+  dead symlink, the fix is `./bin/bootstrap` — don't hand-patch it, and don't
+  re-derive the setup by hand. That script is the single source of truth for
+  local state that git can't carry.
+- Anything worth keeping must be committed and pushed. Never leave findings,
+  drafts, or decisions only in a local file or in chat — he won't have them
+  tomorrow on another machine. If something is worth knowing later, it goes in
+  a tracked file in one of these two repos.
+- Keep this file current. It's the handoff between sessions and machines; if
+  the setup changes, update it in the same commit.
 
 **Always pull from `overleaf` before editing** any file in `career-docs`. He edits
 in the browser, so local is stale by default. Overleaf's bridge rejects

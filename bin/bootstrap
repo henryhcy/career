@@ -1,0 +1,79 @@
+#!/usr/bin/env bash
+# Set up this job search environment on a new machine.
+#
+#   git clone https://github.com/henryhcy/career-docs.git   # optional, done for you
+#   git clone https://github.com/henryhcy/career.git
+#   cd career && ./bin/bootstrap
+#
+# Idempotent — safe to re-run. Everything it does is recorded here rather than
+# left as undocumented local state, because none of it lives in git:
+#   - the `overleaf` remote (git never tracks .git/config)
+#   - the `docs/` symlink (gitignored)
+#   - the credential helper (machine-specific by design)
+set -euo pipefail
+
+OVERLEAF_PROJECT_ID="6a580fd1b9cdc025e543a7f7"
+OVERLEAF_URL="https://git.overleaf.com/${OVERLEAF_PROJECT_ID}"
+DOCS_GITHUB="https://github.com/henryhcy/career-docs.git"
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DOCS="$(cd "$REPO_ROOT/.." && pwd)/career-docs"
+
+say() { printf '\n\033[1m%s\033[0m\n' "$1"; }
+
+# --- 1. career-docs clone ---------------------------------------------------
+say "1. career-docs"
+if [ -d "$DOCS/.git" ]; then
+  echo "   already at $DOCS"
+else
+  echo "   cloning into $DOCS"
+  git clone "$DOCS_GITHUB" "$DOCS"
+fi
+
+# --- 2. overleaf remote -----------------------------------------------------
+say "2. overleaf remote"
+if git -C "$DOCS" remote get-url overleaf >/dev/null 2>&1; then
+  git -C "$DOCS" remote set-url overleaf "$OVERLEAF_URL"
+  echo "   updated -> $OVERLEAF_URL"
+else
+  git -C "$DOCS" remote add overleaf "$OVERLEAF_URL"
+  echo "   added -> $OVERLEAF_URL"
+fi
+
+# --- 3. docs symlink --------------------------------------------------------
+say "3. docs/ symlink"
+ln -sfn "$DOCS" "$REPO_ROOT/docs"
+echo "   $REPO_ROOT/docs -> $DOCS"
+
+# --- 4. credential helper ---------------------------------------------------
+say "4. credential helper"
+if [ -n "$(git config --global credential.helper || true)" ]; then
+  echo "   already set: $(git config --global credential.helper)"
+else
+  case "$(uname -s)" in
+    Darwin) helper=osxkeychain ;;
+    Linux)  helper=$(command -v git-credential-libsecret >/dev/null 2>&1 \
+                     && echo libsecret || echo "cache --timeout=86400") ;;
+    *)      helper="cache --timeout=86400" ;;
+  esac
+  git config --global credential.helper "$helper"
+  echo "   set: $helper"
+fi
+
+# --- 5. auth check ----------------------------------------------------------
+say "5. overleaf auth"
+if GIT_TERMINAL_PROMPT=0 git -C "$DOCS" ls-remote overleaf >/dev/null 2>&1; then
+  echo "   token works — you're done."
+else
+  cat <<MSG
+   No working token on this machine yet. Get one from Overleaf:
+   Account Settings -> Git Integration -> generate token. Then run:
+
+     printf 'protocol=https\\nhost=git.overleaf.com\\nusername=git\\npassword=YOUR_TOKEN\\n' | git credential approve
+
+   Never paste that token into a file in either repo.
+MSG
+fi
+
+say "done"
+echo "Sync anytime with: $REPO_ROOT/bin/docs-sync"

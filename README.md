@@ -17,6 +17,23 @@ career/          <- you are here: tracker, research, notes
 
 See [CLAUDE.md](CLAUDE.md) for how the pieces fit and the rules for touching them.
 
+## Setting up a new machine
+
+```bash
+git clone https://github.com/henryhcy/career.git
+cd career && ./bin/bootstrap
+```
+
+`bootstrap` clones `career-docs` beside this repo, adds the `overleaf` remote,
+creates the `docs/` symlink, and configures a credential helper. It's idempotent.
+
+The one thing it can't do is supply your Overleaf token — that's a secret and
+deliberately not in git. Generate one at Overleaf → Account Settings → Git
+Integration, and `bootstrap` prints the command to store it in your keychain.
+
+Nothing else is machine-specific. Both repos are complete on GitHub; everything
+`bootstrap` sets up is either derivable or a secret you supply once per machine.
+
 ## Layout
 
 | Path | What lives here |
