@@ -33,9 +33,11 @@ Next actions:
 Two profile documents now live in `career-docs`, sharing `shared/style.sty`
 (in sync across local / Overleaf / GitHub at commit `6acbff5`):
 
-- **`cv.tex`** — the full, detailed CV (the source of record). Everything: all five projects
-  (incl. **MERMAID** as an arXiv preprint under revision, and **FAIR-Q**), full work history
-  (Cloudwalk + IBM internships), all publications, TA + research interests. Multi-page, 0.8in margins.
+- **`cv.tex`** — the full, detailed CV (the source of record). Research Experience lists only
+  peer-reviewed/published work — **CRAFT, TACO, SMILE-College** (MERMAID and FAIR-Q were removed
+  from there as not peer-reviewed). **MERMAID stays in Publications** as an arXiv preprint; FAIR-Q
+  is out entirely (not archived). Full work history (Cloudwalk + IBM), TA + research interests.
+  Multi-page, 0.8in margins.
 - **`resume.tex`** — the **one-page, Applied-Scientist-forward** industry resume, derived from
   the CV. Lean: CRAFT + TACO (1 bullet each), 3 publications, HALO (2 bullets), BU RA (1 bullet),
   skills. 0.6in margins.
