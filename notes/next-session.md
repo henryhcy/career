@@ -34,9 +34,11 @@ Next actions:
 industry resume (in sync across local / Overleaf / GitHub at commit `54c915e`):
 
 - Scholar URL fixed (real profile); GitHub added to the header.
-- Research trimmed to 3 lead projects (TACO, Temporal, MERMAID); SMILE-College + the NL-querying
-  paper live in Publications; **FAIR-Q was dropped** to fit one page — re-add if wanted.
-- Bullets tightened to impact-first; HALO metrics kept.
+- Research now 2 lead projects: **TACO** (CHASE 2025) and **CRAFT** (Temporal Symptom Timeline
+  Extraction — **accepted at SIAM SDM 2026**, added to Publications). **MERMAID was dropped**
+  entirely (rejected, being reworked, memory contribution uncertain) — reversible.
+- **FAIR-Q** also dropped for space. SMILE-College + the NL-querying paper stay in Publications.
+- Bullets tightened to impact-first; HALO metrics kept (cut to 2 bullets for length).
 - Skills reorganized; **added scikit-learn, NumPy, pandas, RAG, "multi-agent systems"** as
   near-certain given the work — Chengyang to confirm or cut.
 - Also added `career-docs/.gitattributes` (`* text=auto eol=lf`): the repo had none, so a
@@ -49,8 +51,9 @@ industry resume (in sync across local / Overleaf / GitHub at commit `54c915e`):
   Overleaf's main document is set to `resume.tex`, and that `fontawesome5` (pulled in by
   `style.sty`, currently unused) doesn't error — drop it from the preamble if it does.
 - [ ] **Confirm the skill additions** (scikit-learn, NumPy, pandas, RAG, multi-agent systems).
-- [ ] **Update paper #3 status** — Temporal is "In preparation"; per the plan it becomes
-  "under review" once submitted (Aug 31 milestone).
+- [ ] **CRAFT citation** — the Publications entry uses a placeholder title + "et al." (see the
+  `TODO` comment in `resume.tex` line 40). Needs the exact paper title and full author list from
+  the CRAFT Overleaf draft (Claude can't access that project). Confirm first-author order too.
 - [ ] **Look at the board.** It was built and API-tested on a Mac but never viewed in
   a browser — there was no screenshot tool. Layout, spacing, and dark mode are
   unverified by eye.
