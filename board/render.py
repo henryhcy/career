@@ -6,7 +6,6 @@ tracker still reads well on GitHub and in a diff.
 from __future__ import annotations
 
 import json
-from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -50,8 +49,9 @@ def render(data: dict) -> str:
     out.append("     Source of truth is applications.json. Regenerate with ./bin/render")
     out.append("     or by saving from the board (./bin/board). -->")
     out.append("")
-    out.append(f"_Last generated {date.today().isoformat()} — "
-               f"{len(active)} active, {len(leads)} leads, {len(closed)} closed._")
+    # No generation timestamp: it would rewrite this file every day even with no
+    # data change, and git already records when things moved.
+    out.append(f"_{len(active)} active · {len(leads)} leads · {len(closed)} closed._")
     out.append("")
 
     counts = " · ".join(f"**{len(by_status[s])}** {s}" for s in PIPELINE if by_status[s])
