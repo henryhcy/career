@@ -1,7 +1,9 @@
 # Resume & positioning
 
-The **document itself lives in `../career-docs`** (`resume.tex`, Overleaf-synced) — never put
-`.tex` or PDFs in this repo. This file is the *strategy and checklist* that drives those edits.
+The **documents live in `../career-docs`** (Overleaf-synced) — never put `.tex` or PDFs in this
+repo. Two of them: **`cv.tex`** (full detailed CV, the source of record) and **`resume.tex`**
+(the one-page industry version derived from it). This file is the *strategy and checklist* that
+drives those edits.
 
 ## The core move: academic CV → one-page industry resume
 

@@ -28,34 +28,35 @@ Next actions:
 - [ ] **Create the `ml-job-prep` code repo** when you write your first solution. Code does
   NOT go in `career` (prose-only) — see the "Where the code lives" section of the plan.
 
-## Resume conversion done (2026-07-16)
+## Resume + CV (2026-07-16)
 
-`resume.tex` was converted from academic-CV style to a **one-page, Applied-Scientist-forward**
-industry resume (in sync across local / Overleaf / GitHub at commit `54c915e`):
+Two profile documents now live in `career-docs`, sharing `shared/style.sty`
+(in sync across local / Overleaf / GitHub at commit `6acbff5`):
 
-- Scholar URL fixed (real profile); GitHub added to the header.
-- Research now 2 lead projects: **TACO** (CHASE 2025) and **CRAFT** (Temporal Symptom Timeline
-  Extraction — **accepted at SIAM SDM 2026**, added to Publications). **MERMAID was dropped**
-  entirely (rejected, being reworked, memory contribution uncertain) — reversible.
-- **FAIR-Q** also dropped for space. SMILE-College + the NL-querying paper stay in Publications.
-- Bullets tightened to impact-first; HALO metrics kept (cut to 2 bullets for length).
-- Skills reorganized; **added scikit-learn, NumPy, pandas, RAG, "multi-agent systems"** as
-  near-certain given the work — Chengyang to confirm or cut.
-- Also added `career-docs/.gitattributes` (`* text=auto eol=lf`): the repo had none, so a
-  Windows clone had checked out CRLF and one sync baked CRLF into every file. Fixed + normalized.
+- **`cv.tex`** — the full, detailed CV (the source of record). Everything: all five projects
+  (incl. **MERMAID** as an arXiv preprint under revision, and **FAIR-Q**), full work history
+  (Cloudwalk + IBM internships), all publications, TA + research interests. Multi-page, 0.8in margins.
+- **`resume.tex`** — the **one-page, Applied-Scientist-forward** industry resume, derived from
+  the CV. Lean: CRAFT + TACO (1 bullet each), 3 publications, HALO (2 bullets), BU RA (1 bullet),
+  skills. 0.6in margins.
+
+Shared facts (both docs): Scholar URL fixed; GitHub in header; CRAFT finalized from the SDM 2026
+paper (title, MedTempo, 5,347 / 3,166); skills gained scikit-learn, NumPy, pandas, RAG,
+"multi-agent systems". Also added `career-docs/.gitattributes` (`* text=auto eol=lf`) to fix a
+CRLF-normalization issue from the first sync.
+
+**Plan:** get feedback on both from Chengyang's industry friends, then iterate.
 
 ## Needs Chengyang
 
-- [ ] **Compile `resume.tex` in Overleaf and confirm it fits on one page.** If it spills,
-  tell me and I'll trim (first cuts: MERMAID 2nd bullet, the Education focus line). Also confirm
-  Overleaf's main document is set to `resume.tex`, and that `fontawesome5` (pulled in by
-  `style.sty`, currently unused) doesn't error — drop it from the preamble if it does.
+- [ ] **Compile both in Overleaf** (switch the main document under Menu → Settings). Confirm
+  `resume.tex` is one page; if it spills, next cut is the CRAFT bullet's tail or a skills line.
+  Confirm `fontawesome5` (pulled in by `style.sty`, currently unused) doesn't error — drop it if it does.
+- [ ] **Send both to industry friends for feedback**, then bring notes back to iterate.
 - [ ] **Confirm the skill additions** (scikit-learn, NumPy, pandas, RAG, multi-agent systems).
-- [ ] **CRAFT author list** — title + details are now finalized from the SDM 2026 paper PDF
-  ("CRAFT: LLM-Based Iterative Refinement for Temporal Reasoning over Clinical Narratives";
-  MedTempo, 5,347 narratives / 3,166 labeled). The paper PDF is **anonymized**, so the
-  Publications entry still uses "He, Chengyang, et al." — replace with the full author list
-  (see the `TODO` in `resume.tex`).
+- [ ] **CRAFT author list** — the paper PDF is **anonymized**, so both docs use
+  "He, Chengyang, et al." Replace with the full author list (see the `TODO` in `resume.tex` /
+  `cv.tex`).
 - [ ] **Look at the board.** It was built and API-tested on a Mac but never viewed in
   a browser — there was no screenshot tool. Layout, spacing, and dark mode are
   unverified by eye.
