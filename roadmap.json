@@ -1,0 +1,405 @@
+{
+  "phases": [
+    {
+      "name": "Build",
+      "range": "Jul 13 – Aug 30",
+      "weeks": [
+        {
+          "id": "w01",
+          "label": "Jul 13–19",
+          "start": "2026-07-13",
+          "end": "2026-07-19",
+          "tasks": [
+            {
+              "id": "w01-lc",
+              "text": "LeetCode: Arrays & Hashing → Two Pointers (~6, cum ~6)"
+            },
+            {
+              "id": "w01-study",
+              "text": "Study: ML breadth warm-up — bias–variance, regularization; skim Designing ML Systems ch. 1"
+            },
+            {
+              "id": "w01-source",
+              "text": "Sourcing: set up job alerts; first sweep; concretize the quant + health-AI placeholder leads"
+            },
+            {
+              "id": "w01-apply",
+              "text": "Apply: start Fall internship apps — Amazon first (Jul 26 deadline)"
+            }
+          ]
+        },
+        {
+          "id": "w02",
+          "label": "Jul 20–26",
+          "start": "2026-07-20",
+          "end": "2026-07-26",
+          "tasks": [
+            {
+              "id": "w02-lc",
+              "text": "LeetCode: Sliding Window → Stack (~8, cum ~14)"
+            },
+            {
+              "id": "w02-study",
+              "text": "Study: metrics (ROC-AUC vs PR-AUC, NDCG/MAP/MRR); one system-design read"
+            },
+            {
+              "id": "w02-resume",
+              "text": "Resume: finish v1; update LinkedIn; draft referral one-pager"
+            },
+            {
+              "id": "w02-apply",
+              "text": "Sourcing: submit intern apps; log each on the board same day"
+            },
+            {
+              "id": "w02-ms",
+              "text": "Jul 26: 10–12 Fall internship apps submitted; resume final; tracker live",
+              "milestone": true
+            }
+          ]
+        },
+        {
+          "id": "w03",
+          "label": "Jul 27 – Aug 2",
+          "start": "2026-07-27",
+          "end": "2026-08-02",
+          "tasks": [
+            {
+              "id": "w03-lc",
+              "text": "LeetCode: Binary Search → Linked List (~8, cum ~22)"
+            },
+            {
+              "id": "w03-study",
+              "text": "Study: classical ML (trees → RF vs GBM); begin portfolio project (trains locally)"
+            },
+            {
+              "id": "w03-scratch",
+              "text": "Track 3: linear + logistic regression from scratch (NumPy)"
+            }
+          ]
+        },
+        {
+          "id": "w04",
+          "label": "Aug 3–9",
+          "start": "2026-08-03",
+          "end": "2026-08-09",
+          "tasks": [
+            {
+              "id": "w04-lc",
+              "text": "LeetCode: Trees (~8, cum ~30)"
+            },
+            {
+              "id": "w04-study",
+              "text": "Study: deep-learning core (backprop, norm, dropout); project → FastAPI endpoint"
+            }
+          ]
+        },
+        {
+          "id": "w05",
+          "label": "Aug 10–16",
+          "start": "2026-08-10",
+          "end": "2026-08-16",
+          "tasks": [
+            {
+              "id": "w05-lc",
+              "text": "LeetCode: Heap / PQ → Backtracking (~8, cum ~38)"
+            },
+            {
+              "id": "w05-study",
+              "text": "Study: attention & transformers cold; project → Dockerize"
+            },
+            {
+              "id": "w05-ms",
+              "text": "Aug 10: 30 LeetCode done; model + API working locally",
+              "milestone": true
+            }
+          ]
+        },
+        {
+          "id": "w06",
+          "label": "Aug 17–23",
+          "start": "2026-08-17",
+          "end": "2026-08-23",
+          "tasks": [
+            {
+              "id": "w06-lc",
+              "text": "LeetCode: Graphs (~9, cum ~47)"
+            },
+            {
+              "id": "w06-study",
+              "text": "Study: A/B testing + causal inference; project → deploy to AWS, add W&B"
+            },
+            {
+              "id": "w06-scratch",
+              "text": "Track 3: k-means, k-NN, 2-layer NN with manual backprop"
+            }
+          ]
+        },
+        {
+          "id": "w07",
+          "label": "Aug 24–30",
+          "start": "2026-08-24",
+          "end": "2026-08-30",
+          "tasks": [
+            {
+              "id": "w07-lc",
+              "text": "LeetCode: 1-D DP (~8, cum ~55)"
+            },
+            {
+              "id": "w07-study",
+              "text": "Study: system design — recsys (two-tower + ranking) out loud; project → CI + README"
+            },
+            {
+              "id": "w07-ms",
+              "text": "Aug 24: 55 problems; project deployed on AWS with W&B + CI",
+              "milestone": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Defense",
+      "range": "Aug 31 – Sep 20",
+      "weeks": [
+        {
+          "id": "w08",
+          "label": "Aug 31 – Sep 6",
+          "start": "2026-08-31",
+          "end": "2026-09-06",
+          "tasks": [
+            {
+              "id": "w08-lc",
+              "text": "LeetCode: taper to maintenance (~5, redo failed; cum ~60)"
+            },
+            {
+              "id": "w08-resume",
+              "text": "Resume: refresh with paper #3 (under review) + deployed project + GitHub link"
+            },
+            {
+              "id": "w08-source",
+              "text": "Sourcing: front-load FT applications this week; start the referral sweep"
+            },
+            {
+              "id": "w08-ms",
+              "text": "Aug 31: paper #3 submitted; 15+ full-time apps submitted; project write-up posted",
+              "milestone": true
+            }
+          ]
+        },
+        {
+          "id": "w09",
+          "label": "Sep 7–13",
+          "start": "2026-09-07",
+          "end": "2026-09-13",
+          "tasks": [
+            {
+              "id": "w09-lc",
+              "text": "LeetCode: 30 min/day maintenance only — everything else paused (cum ~64)"
+            }
+          ]
+        },
+        {
+          "id": "w10",
+          "label": "Sep 14–20",
+          "start": "2026-09-14",
+          "end": "2026-09-20",
+          "tasks": [
+            {
+              "id": "w10-lc",
+              "text": "LeetCode: maintenance only (cum ~68)"
+            },
+            {
+              "id": "w10-ms",
+              "text": "Sep 20: proposal defense done",
+              "milestone": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interview",
+      "range": "Sep 21 – Oct 31",
+      "weeks": [
+        {
+          "id": "w11",
+          "label": "Sep 21–27",
+          "start": "2026-09-21",
+          "end": "2026-09-27",
+          "tasks": [
+            {
+              "id": "w11-lc",
+              "text": "LeetCode: finish 2-D DP (first 6) + Greedy/Intervals; heavy redo of failed list (~12, cum ~80)"
+            },
+            {
+              "id": "w11-study",
+              "text": "Study: system-design practice 3×/week starts; first mock interview"
+            }
+          ]
+        },
+        {
+          "id": "w12",
+          "label": "Sep 28 – Oct 4",
+          "start": "2026-09-28",
+          "end": "2026-10-04",
+          "tasks": [
+            {
+              "id": "w12-lc",
+              "text": "LeetCode: push to target + company-tagged for imminent loops (~15, cum ~95–110)"
+            },
+            {
+              "id": "w12-ms",
+              "text": "Oct 1: ~110 problems total; all 6 system designs practiced once; referral sweep done",
+              "milestone": true
+            }
+          ]
+        },
+        {
+          "id": "w13",
+          "label": "Oct 5–11",
+          "start": "2026-10-05",
+          "end": "2026-10-11",
+          "tasks": [
+            {
+              "id": "w13-lc",
+              "text": "LeetCode: maintain (redo + company-tagged); weekly mock; Amazon LP stories"
+            }
+          ]
+        },
+        {
+          "id": "w14",
+          "label": "Oct 12–18",
+          "start": "2026-10-12",
+          "end": "2026-10-18",
+          "tasks": [
+            {
+              "id": "w14-prep",
+              "text": "Company-specific prep: 2 days before each loop, do that company's top frequency-sorted problems"
+            },
+            {
+              "id": "w14-ms",
+              "text": "Oct 15: 4+ mock interviews completed; Amazon LP stories memorized",
+              "milestone": true
+            }
+          ]
+        },
+        {
+          "id": "w15",
+          "label": "Oct 19–25",
+          "start": "2026-10-19",
+          "end": "2026-10-25",
+          "tasks": [
+            {
+              "id": "w15-loops",
+              "text": "Loops in flight; write a retro in notes/ after each; keep mocks weekly"
+            }
+          ]
+        },
+        {
+          "id": "w16",
+          "label": "Oct 26 – Nov 1",
+          "start": "2026-10-26",
+          "end": "2026-11-01",
+          "tasks": [
+            {
+              "id": "w16-loops",
+              "text": "Loops continue; update the board as cards move (screen → interviewing)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Close",
+      "range": "Nov 2 – Dec 20",
+      "weeks": [
+        {
+          "id": "w17",
+          "label": "Nov 2–8",
+          "start": "2026-11-02",
+          "end": "2026-11-08",
+          "tasks": [
+            {
+              "id": "w17-loops",
+              "text": "Run loops; company-tagged prep 2 days out; log every interview retro"
+            }
+          ]
+        },
+        {
+          "id": "w18",
+          "label": "Nov 9–15",
+          "start": "2026-11-09",
+          "end": "2026-11-15",
+          "tasks": [
+            {
+              "id": "w18-loops",
+              "text": "Continue loops; tighten weak spots surfaced in retros"
+            }
+          ]
+        },
+        {
+          "id": "w19",
+          "label": "Nov 16–22",
+          "start": "2026-11-16",
+          "end": "2026-11-22",
+          "tasks": [
+            {
+              "id": "w19-finals",
+              "text": "Onsite/virtual finals; keep LeetCode warm (~3/wk)"
+            }
+          ]
+        },
+        {
+          "id": "w20",
+          "label": "Nov 23–29",
+          "start": "2026-11-23",
+          "end": "2026-11-29",
+          "tasks": [
+            {
+              "id": "w20-light",
+              "text": "Thanksgiving week — lighter; follow-ups so nothing goes stale"
+            }
+          ]
+        },
+        {
+          "id": "w21",
+          "label": "Nov 30 – Dec 6",
+          "start": "2026-11-30",
+          "end": "2026-12-06",
+          "tasks": [
+            {
+              "id": "w21-finals",
+              "text": "Finals continue; start comparing offers; comp research per company"
+            }
+          ]
+        },
+        {
+          "id": "w22",
+          "label": "Dec 7–13",
+          "start": "2026-12-07",
+          "end": "2026-12-13",
+          "tasks": [
+            {
+              "id": "w22-negotiate",
+              "text": "Negotiate; use the companies/*.md comp tables"
+            }
+          ]
+        },
+        {
+          "id": "w23",
+          "label": "Dec 14–20",
+          "start": "2026-12-14",
+          "end": "2026-12-20",
+          "tasks": [
+            {
+              "id": "w23-ms",
+              "text": "Dec 20: signed offer, or final-round loops in flight before the final semester",
+              "milestone": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "done": {}
+}

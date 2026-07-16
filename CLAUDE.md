@@ -91,8 +91,14 @@ to it. It binds to localhost deliberately; don't make it listen on 0.0.0.0.
 | --- | --- |
 | `applications.json` | **Source of truth** for the pipeline |
 | `habits.json` | Daily checks and their completion log |
+| `roadmap.json` | Week-by-week plan + per-task done map; the board's Roadmap panel |
 | `applications.md` | **Generated.** Never hand-edit — `./bin/render` overwrites it |
 | `board/` | Server, renderer, and UI |
+
+`roadmap.json` mirrors the prose in `notes/roadmap.md` (that file stays the readable
+GitHub version). The board reads/writes the JSON; keep the two in step by hand if the
+plan changes. The client PUTs the whole object back, so `phases` round-trips untouched
+and only `done` changes from the UI.
 
 Status vocabulary is fixed. `lead` → `applied` → `screen` → `interviewing` are the
 pipeline; `rejected` / `withdrawn` / `ghosted` are terminal. Don't invent new ones —

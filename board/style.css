@@ -311,3 +311,99 @@ dialog h2 { margin: 0 0 12px; font-size: 15px; }
 }
 .saving.show { opacity: 1; }
 .saving.error { background: var(--critical); color: #fff; }
+
+/* --- roadmap ------------------------------------------------------------- */
+.roadmap-wrap { padding: 0 24px 40px; }
+.roadmap-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.roadmap-head h2 {
+  font-size: 12px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.roadmap-head .sub { color: var(--ink-muted); font-size: 12px; }
+
+details.phase {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+details.phase > summary {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+details.phase > summary::-webkit-details-marker { display: none; }
+details.phase > summary::before {
+  content: "▸";
+  color: var(--ink-muted);
+  font-size: 11px;
+  margin-right: 2px;
+}
+details.phase[open] > summary::before { content: "▾"; }
+.phase .pname { font-weight: 650; }
+.phase .prange { color: var(--ink-muted); font-size: 12px; }
+.phase .pcount {
+  margin-left: auto;
+  color: var(--ink-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.week {
+  border-top: 1px solid var(--hairline);
+  padding: 9px 14px 11px;
+}
+.week.now {
+  border-left: 3px solid var(--stage-screen);
+  background: color-mix(in srgb, var(--stage-screen) 7%, transparent);
+}
+.week-head { display: flex; align-items: center; gap: 8px; margin-bottom: 5px; }
+.week-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+  font-weight: 600;
+}
+.now-badge {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--stage-screen);
+  border-radius: 999px;
+  padding: 1px 7px;
+}
+
+.rtask {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.rtask input {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  accent-color: var(--good);
+  flex: none;
+  cursor: pointer;
+}
+.rtask .rtext { font-size: 13px; line-height: 1.45; }
+.rtask.done .rtext { color: var(--ink-muted); text-decoration: line-through; }
+.rtask.milestone .rtext { font-weight: 600; color: var(--ink); }
+.rtask.milestone input { accent-color: var(--stage-screen); }
+.rtask.milestone.done .rtext { color: var(--ink-muted); }

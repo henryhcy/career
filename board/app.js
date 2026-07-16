@@ -14,7 +14,7 @@ const ALL_STATUSES = [...PIPELINE.map((s) => s.id), ...TERMINAL];
 const STALE_DAYS = 10;
 const HISTORY_DAYS = 14;
 
-let state = { applications: [], habits: { habits: [], log: {} }, today: "" };
+let state = { applications: [], habits: { habits: [], log: {} }, roadmap: { phases: [], done: {} }, today: "" };
 let editing = null;
 
 const $ = (id) => document.getElementById(id);
@@ -37,9 +37,10 @@ async function load() {
 }
 
 async function save(what) {
-  const body = what === "applications"
-    ? { applications: state.applications }
-    : state.habits;
+  const body =
+    what === "applications" ? { applications: state.applications } :
+    what === "roadmap" ? state.roadmap :
+    state.habits;
   try {
     const r = await fetch(`/api/${what}`, {
       method: "PUT",
@@ -298,6 +299,80 @@ function renderHistory() {
   wrap.append(legend);
 }
 
+/* ---------- roadmap ---------- */
+
+function inWeek(w) {
+  return state.today >= w.start && state.today <= w.end;
+}
+
+function toggleRoadmapTask(id, on) {
+  const done = (state.roadmap.done ||= {});
+  if (on) done[id] = true;
+  else delete done[id];
+  render();
+  save("roadmap");
+}
+
+function renderRoadmap() {
+  const wrap = $("roadmap");
+  wrap.textContent = "";
+  const rm = state.roadmap || { phases: [], done: {} };
+  const done = rm.done || {};
+  const phases = rm.phases || [];
+
+  const allTasks = phases.flatMap((p) => p.weeks).flatMap((w) => w.tasks);
+  const nDone = allTasks.filter((t) => done[t.id]).length;
+  $("roadmap-sub").textContent = allTasks.length
+    ? `${nDone} of ${allTasks.length} tasks done`
+    : "No roadmap loaded.";
+
+  for (const phase of phases) {
+    const weekTasks = phase.weeks.flatMap((w) => w.tasks);
+    const details = document.createElement("details");
+    details.className = "phase";
+    // Expand the phase holding the current week; collapse the rest to keep it scannable.
+    details.open = phase.weeks.some((w) => inWeek(w));
+
+    const summary = document.createElement("summary");
+    const pdone = weekTasks.filter((t) => done[t.id]).length;
+    summary.append(mk("span", "pname", phase.name));
+    summary.append(mk("span", "prange", phase.range));
+    summary.append(mk("span", "pcount", `${pdone}/${weekTasks.length}`));
+    details.append(summary);
+
+    for (const w of phase.weeks) {
+      const week = document.createElement("div");
+      week.className = "week" + (inWeek(w) ? " now" : "");
+
+      const head = document.createElement("div");
+      head.className = "week-head";
+      head.append(mk("span", "week-label", w.label));
+      if (inWeek(w)) head.append(mk("span", "now-badge", "this week"));
+      week.append(head);
+
+      for (const t of w.tasks) {
+        const row = document.createElement("label");
+        row.className = "rtask" + (t.milestone ? " milestone" : "") + (done[t.id] ? " done" : "");
+        const cb = document.createElement("input");
+        cb.type = "checkbox";
+        cb.checked = !!done[t.id];
+        cb.addEventListener("change", () => toggleRoadmapTask(t.id, cb.checked));
+        row.append(cb, mk("span", "rtext", (t.milestone ? "🎯 " : "") + t.text));
+        week.append(row);
+      }
+      details.append(week);
+    }
+    wrap.append(details);
+  }
+}
+
+function mk(tag, cls, text) {
+  const el = document.createElement(tag);
+  el.className = cls;
+  if (text != null) el.textContent = text;
+  return el;
+}
+
 /* ---------- dialog ---------- */
 
 function openDialog(app) {
@@ -363,6 +438,7 @@ function render() {
   renderBoard();
   renderHabits();
   renderHistory();
+  renderRoadmap();
 }
 
 $("add").addEventListener("click", () => openDialog(null));

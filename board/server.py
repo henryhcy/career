@@ -22,6 +22,7 @@ BOARD_DIR = Path(__file__).resolve().parent
 ROOT = BOARD_DIR.parent
 APPLICATIONS = ROOT / "applications.json"
 HABITS = ROOT / "habits.json"
+ROADMAP = ROOT / "roadmap.json"
 
 HOST = "127.0.0.1"
 PORT = int(os.environ.get("BOARD_PORT", "4173"))
@@ -75,6 +76,7 @@ class Handler(BaseHTTPRequestHandler):
             self._json(200, {
                 "applications": read_json(APPLICATIONS, {"applications": []})["applications"],
                 "habits": read_json(HABITS, {"habits": [], "log": {}}),
+                "roadmap": read_json(ROADMAP, {"phases": [], "done": {}}),
                 "today": date.today().isoformat(),
             })
             return
@@ -106,6 +108,14 @@ class Handler(BaseHTTPRequestHandler):
             write_json(HABITS, {
                 "habits": payload.get("habits", []),
                 "log": payload.get("log", {}),
+            })
+            self._json(200, {"ok": True})
+        elif path == "/api/roadmap":
+            # Only the `done` map changes from the UI; keep phases as the client sends
+            # them back so the structure round-trips untouched.
+            write_json(ROADMAP, {
+                "phases": payload.get("phases", []),
+                "done": payload.get("done", {}),
             })
             self._json(200, {"ok": True})
         else:
