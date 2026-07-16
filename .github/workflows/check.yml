@@ -1,0 +1,78 @@
+name: check
+
+# Proves bin/* and the board actually run on Windows and Linux. The board is
+# stdlib-only by design, so there is nothing to install and no venv to build —
+# this workflow exists to catch the platform bugs (CRLF shebangs, python vs
+# python3, BSD-only flags) that a Mac can't surface.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash   # Git Bash on Windows — the same shell Chengyang uses
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'   # oldest we claim to support
+
+      - name: no CRLF in scripts
+        run: |
+          # A carriage return in a shebang makes bash fail with "bad interpreter".
+          for f in bin/* board/*.py; do
+            if grep -qU $'\r' "$f"; then echo "CRLF found in $f"; exit 1; fi
+          done
+          echo "all LF"
+
+      - name: bash syntax
+        run: for f in bin/*; do bash -n "$f"; done
+
+      - name: python syntax
+        run: python -m py_compile board/*.py
+
+      - name: render is reproducible
+        run: |
+          ./bin/render
+          git diff --exit-code applications.md \
+            || { echo "applications.md is stale — run ./bin/render and commit"; exit 1; }
+
+      - name: board serves and writes
+        run: |
+          BOARD_PORT=4188 ./bin/board &
+          pid=$!
+          for i in $(seq 1 30); do
+            curl -sf http://127.0.0.1:4188/api/state >/dev/null && break
+            sleep 1
+          done
+
+          curl -sf http://127.0.0.1:4188/api/state | grep -q '"today"'
+          curl -sf -o /dev/null http://127.0.0.1:4188/
+          curl -sf -o /dev/null http://127.0.0.1:4188/app.js
+
+          # A write must land on disk and regenerate the markdown view.
+          curl -sf -X PUT http://127.0.0.1:4188/api/applications \
+            -H 'Content-Type: application/json' \
+            -d '{"applications":[{"id":"ci","company":"CI | Co","role":"Tester","status":"applied","applied":"2026-01-01","lastTouch":"2026-01-01"}]}' >/dev/null
+          grep -q '"CI | Co"' applications.json
+          grep -q 'CI \\| Co' applications.md   # pipe must be escaped or the row breaks
+
+          # Path traversal must not escape board/.
+          code=$(curl -s -o /dev/null -w '%{http_code}' 'http://127.0.0.1:4188/../applications.json')
+          [ "$code" = "404" ] || { echo "traversal guard returned $code"; exit 1; }
+
+          kill $pid 2>/dev/null || true
+          git checkout -- applications.json applications.md
+          echo "board ok on ${{ matrix.os }}"
