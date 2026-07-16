@@ -3,7 +3,9 @@ const PIPELINE = [
   { id: "applied", label: "Applied", color: "var(--stage-applied)" },
   { id: "screen", label: "Screen", color: "var(--stage-screen)" },
   { id: "interviewing", label: "Interviewing", color: "var(--stage-inter)" },
-  { id: "offer", label: "Offer", color: "var(--stage-offer)" },
+  // "offer" stage omitted for now. To restore: add
+  //   { id: "offer", label: "Offer", color: "var(--stage-offer)" },
+  // here AND in board/render.py PIPELINE, and bump the .board grid to repeat(5, …).
 ];
 const TERMINAL = ["rejected", "withdrawn", "ghosted"];
 const ALL_STATUSES = [...PIPELINE.map((s) => s.id), ...TERMINAL];

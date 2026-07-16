@@ -13,7 +13,8 @@ JSON_PATH = ROOT / "applications.json"
 MD_PATH = ROOT / "applications.md"
 
 # Ordered pipeline. Terminal states are listed separately because they leave the funnel.
-PIPELINE = ["lead", "applied", "screen", "interviewing", "offer"]
+# "offer" omitted for now; to restore, add it back here AND in board/app.js PIPELINE.
+PIPELINE = ["lead", "applied", "screen", "interviewing"]
 TERMINAL = ["rejected", "withdrawn", "ghosted"]
 STATUSES = PIPELINE + TERMINAL
 

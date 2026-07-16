@@ -1,10 +1,25 @@
 {
   "habits": [
-    { "id": "leetcode", "label": "One NeetCode problem" },
-    { "id": "study", "label": "One study/project block (Tracks 2-6)" },
-    { "id": "apply", "label": "Apply to 2 roles" },
-    { "id": "follow-up", "label": "Send one follow-up" },
-    { "id": "outreach", "label": "Reach out to one person" }
+    {
+      "id": "leetcode",
+      "label": "One NeetCode problem"
+    },
+    {
+      "id": "study",
+      "label": "One study/project block (Tracks 2-6)"
+    },
+    {
+      "id": "apply",
+      "label": "Apply to 2 roles"
+    },
+    {
+      "id": "follow-up",
+      "label": "Send one follow-up"
+    },
+    {
+      "id": "outreach",
+      "label": "Reach out to one person"
+    }
   ],
   "log": {}
 }

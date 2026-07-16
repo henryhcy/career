@@ -5,9 +5,13 @@ Picking back up on the Windows machine. Start with `./bin/bootstrap`, then `./bi
 ## ML job prep plan is now live (added 2026-07-16)
 
 The 7-track prep plan is integrated: [ml-job-prep-plan.md](ml-job-prep-plan.md) (schedule,
-milestones), [interview-prep.md](interview-prep.md) (stories, technical review),
-[amazon-lp.md](amazon-lp.md) (LP map). Seven target companies are on the board as leads;
-the daily habits now mirror the build phase (LeetCode + study block).
+milestones), [study-guide.md](study-guide.md) (the day-to-day LeetCode routine + review
+checklist for the two daily habits), [interview-prep.md](interview-prep.md) (stories,
+technical review), [amazon-lp.md](amazon-lp.md) (LP map). Seven target companies are on the
+board as leads; the daily habits now mirror the build phase (LeetCode + study block).
+
+The board's **Offer** stage was removed for now (pipeline is lead → applied → screen →
+interviewing). Both `board/app.js` and `board/render.py` carry a comment on how to restore it.
 
 Next actions:
 

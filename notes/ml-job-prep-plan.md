@@ -12,6 +12,10 @@ interview season Oct–Dec.
 > solutions, put them in a separate `ml-job-prep` code repo and link it here. See
 > [Where the code lives](#where-the-code-lives) at the bottom — this supersedes the standalone
 > repo structure the original plan suggested.
+>
+> **Day-to-day companion:** [study-guide.md](study-guide.md) turns the two daily board habits
+> (one NeetCode problem + one study block) into concrete instructions — the LeetCode routine,
+> the pattern-by-pattern technique map, and a review checklist with the "known" bar.
 
 ---
 

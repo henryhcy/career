@@ -139,12 +139,12 @@ button.danger { color: var(--critical); }
 /* --- kanban -------------------------------------------------------------- */
 .board {
   display: grid;
-  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
   gap: 10px;
   overflow-x: auto;
 }
 @media (max-width: 1100px) {
-  .board { grid-template-columns: repeat(5, 170px); }
+  .board { grid-template-columns: repeat(4, 170px); }
 }
 
 .col {

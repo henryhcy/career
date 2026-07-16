@@ -94,14 +94,15 @@ to it. It binds to localhost deliberately; don't make it listen on 0.0.0.0.
 | `applications.md` | **Generated.** Never hand-edit — `./bin/render` overwrites it |
 | `board/` | Server, renderer, and UI |
 
-Status vocabulary is fixed. `lead` → `applied` → `screen` → `interviewing` → `offer`
-are the pipeline; `rejected` / `withdrawn` / `ghosted` are terminal. Don't invent new
-ones — `board/app.js` and `board/render.py` both hardcode this list and would need
-updating together.
+Status vocabulary is fixed. `lead` → `applied` → `screen` → `interviewing` are the
+pipeline; `rejected` / `withdrawn` / `ghosted` are terminal. Don't invent new ones —
+`board/app.js` and `board/render.py` both hardcode this list and would need updating
+together. (`offer` was removed for now; both files carry a comment on how to restore
+it, and the `--stage-offer` green stays defined in `style.css` for when it comes back.)
 
-Board colors come from a validated palette: stages use an ordinal blue ramp, `offer`
-uses the reserved status-good green, terminal states are muted. Every colored chip
-carries a text label so color never signals alone. Don't add ad-hoc hex values.
+Board colors come from a validated palette: stages use an ordinal blue ramp and
+terminal states are muted. Every colored chip carries a text label so color never
+signals alone. Don't add ad-hoc hex values.
 
 ## Conventions
 
