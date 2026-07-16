@@ -31,7 +31,7 @@ speech, not a resume.
 
 Checklist mirrors the 7 tracks; deep detail in [ml-job-prep-plan.md](ml-job-prep-plan.md).
 
-- [ ] **Track 1 — Coding:** NeetCode 150 by pattern (~110 by Oct 1); Python fluency drills
+- [ ] **Track 1 — Coding:** LeetCode by pattern (~110 by Oct 1); Python fluency drills
 - [ ] **Track 2 — ML breadth:** classical ML, deep learning, evaluation metrics, stats/prob,
       A/B testing & causal inference
 - [ ] **Track 3 — ML from scratch:** NumPy (linreg, logreg, k-means, k-NN, 2-layer NN),

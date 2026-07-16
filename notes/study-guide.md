@@ -1,9 +1,10 @@
 # Study guide — what to actually do each day
 
 The operational companion to [ml-job-prep-plan.md](ml-job-prep-plan.md). The plan is the
-*what and when*; this is the *how*, tied to the two daily checks on the board:
+*what and when*, [roadmap.md](roadmap.md) is the *week-by-week arc you can check off*, and
+this is the *how* — tied to the two daily checks on the board:
 
-- **"One NeetCode problem"** → Part 1 below (the LeetCode routine).
+- **"One LeetCode problem"** → Part 1 below (the LeetCode routine).
 - **"One study/project block"** → Part 2 below (what to review or learn).
 
 Tick the box only when you actually did the thing. Streaks are the point.
@@ -30,10 +31,23 @@ It doesn't reward being smart; it rewards having drilled the patterns until they
 **Target speed:** a medium in ~25 min, talking the whole time. Slow is fine in July; build
 speed through August.
 
+### Use LeetCode Premium deliberately
+
+You have Premium — it changes how you pick problems, so use it:
+
+- **Follow a curated list in pattern order** (the map below). LeetCode's own **"Top Interview
+  150"** and **"LeetCode 75"** study plans are good spines; work them by pattern, not front to back.
+- **Company tag + frequency sort (Premium).** Two weeks before a loop, filter problems by that
+  company's tag and sort by frequency — that's the highest-signal prep there is. Do the top
+  ~20–30 for each target (Amazon, Google, Meta, Bloomberg, TikTok).
+- **Sort by frequency generally** so you spend time on what's actually asked, not trivia.
+- **Use the built-in timer and "Interview" mode** to rehearse the 25-minute clock.
+
 ### The pattern map — learn the technique, not the problem
 
-Do NeetCode 150 **in this order** (it's built so each pattern builds on the last). For each,
-the thing to internalize:
+Work the patterns **in this order** (each builds on the last). The counts are a rough
+per-pattern volume to aim for; source the actual problems from your Premium lists above. For
+each, the thing to internalize:
 
 | # | Pattern (count) | The technique to make reflex |
 |---|---|---|

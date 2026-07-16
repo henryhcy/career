@@ -13,8 +13,11 @@ interview season Oct–Dec.
 > [Where the code lives](#where-the-code-lives) at the bottom — this supersedes the standalone
 > repo structure the original plan suggested.
 >
+> **Week-by-week roadmap:** [roadmap.md](roadmap.md) lays the whole search out as checkable
+> weeks (build → defense → interview → close), with cumulative LeetCode targets and milestones.
+>
 > **Day-to-day companion:** [study-guide.md](study-guide.md) turns the two daily board habits
-> (one NeetCode problem + one study block) into concrete instructions — the LeetCode routine,
+> (one LeetCode problem + one study block) into concrete instructions — the LeetCode routine,
 > the pattern-by-pattern technique map, and a review checklist with the "known" bar.
 
 ---
@@ -27,7 +30,8 @@ are where PhDs fail; Tracks 2–3 are where you already have an edge and just ne
 ### Track 1 — Coding / Data Structures & Algorithms (the #1 PhD filter)
 **Goal:** Solve LeetCode mediums in Python in ~25 min, clean code, talking out loud.
 
-- [ ] Work through **NeetCode 150** by pattern, in this order:
+- [ ] Work through LeetCode **by pattern** (you have Premium — use company tags + frequency
+      sort; a curated spine like "Top Interview 150" / "LeetCode 75" works), in this order:
   - [ ] Arrays & Hashing (9 problems)
   - [ ] Two Pointers (5)
   - [ ] Sliding Window (6)
@@ -45,7 +49,9 @@ are where PhDs fail; Tracks 2–3 are where you already have an edge and just ne
 - [ ] Redo every problem you failed, 1 week later (keep a "failed" list)
 - [ ] Python fluency drills: collections (Counter, defaultdict, deque), heapq, itertools,
       list/dict comprehensions, generators
-- **Resources:** neetcode.io (free roadmap + videos); *Python for coding interviews* on the same site
+- **Resources:** LeetCode Premium — official study plans, company-tagged problems, and
+      frequency sort; pair with pattern write-ups (e.g. the "LeetCode patterns" cheat sheets)
+      and Python-for-interviews refreshers on YouTube when a pattern is new
 
 ### Track 2 — ML Breadth (rapid-fire fundamentals round)
 **Goal:** Answer any "explain X / when would you use X / what breaks when Y" in 2–3 minutes.
