@@ -28,14 +28,29 @@ Next actions:
 - [ ] **Create the `ml-job-prep` code repo** when you write your first solution. Code does
   NOT go in `career` (prose-only) — see the "Where the code lives" section of the plan.
 
+## Resume conversion done (2026-07-16)
+
+`resume.tex` was converted from academic-CV style to a **one-page, Applied-Scientist-forward**
+industry resume (in sync across local / Overleaf / GitHub at commit `54c915e`):
+
+- Scholar URL fixed (real profile); GitHub added to the header.
+- Research trimmed to 3 lead projects (TACO, Temporal, MERMAID); SMILE-College + the NL-querying
+  paper live in Publications; **FAIR-Q was dropped** to fit one page — re-add if wanted.
+- Bullets tightened to impact-first; HALO metrics kept.
+- Skills reorganized; **added scikit-learn, NumPy, pandas, RAG, "multi-agent systems"** as
+  near-certain given the work — Chengyang to confirm or cut.
+- Also added `career-docs/.gitattributes` (`* text=auto eol=lf`): the repo had none, so a
+  Windows clone had checked out CRLF and one sync baked CRLF into every file. Fixed + normalized.
+
 ## Needs Chengyang
 
-- [ ] **Google Scholar URL** — `career-docs/resume.tex` links to bare
-  `scholar.google.com` as a placeholder. The CV had it hyperlinked but the PDF text
-  extraction lost the target.
-- [ ] **Confirm `resume.tex` compiles in Overleaf.** The preamble pulls in
-  `fontawesome5`; if it errors, drop it. Also check Overleaf's main document is set
-  to `resume.tex` (the default `main.tex` was deleted).
+- [ ] **Compile `resume.tex` in Overleaf and confirm it fits on one page.** If it spills,
+  tell me and I'll trim (first cuts: MERMAID 2nd bullet, the Education focus line). Also confirm
+  Overleaf's main document is set to `resume.tex`, and that `fontawesome5` (pulled in by
+  `style.sty`, currently unused) doesn't error — drop it from the preamble if it does.
+- [ ] **Confirm the skill additions** (scikit-learn, NumPy, pandas, RAG, multi-agent systems).
+- [ ] **Update paper #3 status** — Temporal is "In preparation"; per the plan it becomes
+  "under review" once submitted (Aug 31 milestone).
 - [ ] **Look at the board.** It was built and API-tested on a Mac but never viewed in
   a browser — there was no screenshot tool. Layout, spacing, and dark mode are
   unverified by eye.
