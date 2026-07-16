@@ -144,6 +144,22 @@ Drafts live in [interview-prep.md](interview-prep.md) and [amazon-lp.md](amazon-
 
 ---
 
+## Search & application operations (the parallel workstream)
+
+The 7 tracks make you *ready*; these two make the search actually *happen*. They run alongside
+the prep every week — don't let prep crowd them out.
+
+- **Resume & positioning** — [resume-prep.md](resume-prep.md): CV → one-page industry resume,
+  AS vs MLE framings, LinkedIn, the referral one-pager. Final v1 by Jul 26; refresh end of Aug.
+- **Sourcing & applying** — [job-search-ops.md](job-search-ops.md): where to find roles, weekly
+  alerts sweep, timing of new-grad/intern reqs, sponsorship/level filters, the referral sweep,
+  and board hygiene. Volume markers: 10–12 intern apps by Jul 26, 15+ FT by Aug 31, referrals by Oct 1.
+
+The board (`applications.json`) is where sourced roles live; [roadmap.md](roadmap.md) folds both
+threads into the weekly plan.
+
+---
+
 ## Weekly Schedule (repeating template)
 
 **Jul 15 – Aug 31 (build phase, ~2.5 hrs/day weekdays):**

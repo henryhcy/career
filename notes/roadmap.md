@@ -17,6 +17,20 @@ Dated **🎯 milestones** are the hard checkpoints (canonical list in
 | **Interview** | Sep 21 – Oct 31 | Designs 3×/week, weekly mocks, company-specific prep, loops begin. |
 | **Close** | Nov 2 – Dec 20 | Run loops, company-tagged prep 2 days out, negotiate, decide. |
 
+## Two threads that run *every* week (not just prep)
+
+Prep (LeetCode + study) is only half the search. These run in parallel the whole way:
+
+- **Sourcing & applying** — [job-search-ops.md](job-search-ops.md). A weekly sweep: scan alerts,
+  log new roles on the board as leads, apply, and (through Oct 1) work the referral sweep. The
+  daily **apply / follow-up / outreach** habits feed this.
+- **Resume & positioning** — [resume-prep.md](resume-prep.md). Front-loaded: a one-page industry
+  resume final by **Jul 26**, refreshed end of Aug with paper #3 + the deployed project, then
+  keyword-tailored per role. The document lives in `../career-docs`.
+
+The weeks below fold these in where they matter most; the volume checkpoints (10–12 intern apps
+by Jul 26, 15+ FT apps by Aug 31, referral sweep by Oct 1) are the hard markers.
+
 ---
 
 ## Build phase (Jul 13 – Aug 30)
@@ -24,10 +38,14 @@ Dated **🎯 milestones** are the hard checkpoints (canonical list in
 - [ ] **Jul 13–19** · *build* · **← you are here (Thu Jul 16)**
   - LeetCode: Arrays & Hashing → Two Pointers. Target ~6. (cum ~6)
   - Study: ML breadth warm-up (bias–variance, regularization); skim *Designing ML Systems* ch. 1.
-  - Apply/outreach: **start the Fall internship apps** (Amazon first); finalize resume with career-docs; concretize the two placeholder leads (quant, health-AI).
+  - **Resume:** start the CV → one-page industry resume in `career-docs`; fix the Scholar link; confirm `resume.tex` compiles ([resume-prep.md](resume-prep.md)).
+  - **Sourcing:** set up LinkedIn + career-page alerts; do the first sourcing sweep; concretize the two placeholder leads (quant, health-AI) into real firms ([job-search-ops.md](job-search-ops.md)).
+  - **Apply:** start the Fall internship apps — **Amazon first** (Jul 26 deadline).
 - [ ] **Jul 20–26** · *build*
   - LeetCode: Sliding Window → Stack. ~8. (cum ~14)
   - Study: metrics (ROC-AUC vs PR-AUC, NDCG/MAP/MRR); one system-design read.
+  - **Resume/positioning:** finish resume v1; update LinkedIn to match; draft the referral one-pager.
+  - **Sourcing:** submit the intern apps; log each on the board the same day.
   - 🎯 **Jul 26 — 10–12 Fall internship apps submitted; resume final; tracker live.**
 - [ ] **Jul 27 – Aug 2** · *build*
   - LeetCode: Binary Search → Linked List. ~8. (cum ~22)
@@ -53,8 +71,9 @@ Dated **🎯 milestones** are the hard checkpoints (canonical list in
 
 - [ ] **Aug 31 – Sep 6** · *defense begins*
   - LeetCode: taper to maintenance (~5, redo failed). (cum ~60)
+  - **Resume:** refresh with paper #3 ("under review") + the deployed project + GitHub link.
+  - **Sourcing:** front-load the FT applications this week — callbacks arrive while you defend. Start the **referral sweep** (finish by Oct 1).
   - 🎯 **Aug 31 — paper #3 submitted ("under review at ___" on resume); 15+ full-time apps submitted; project write-up posted.**
-  - Note: front-load the FT applications into this week — callbacks arrive while you defend.
 - [ ] **Sep 7–13** · *defense* · LeetCode 30 min/day maintenance only; everything else paused. (cum ~64)
 - [ ] **Sep 14–20** · *defense* · LeetCode maintenance only. (cum ~68)
   - 🎯 **Sep 20 — proposal defense done.**

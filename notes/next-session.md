@@ -8,9 +8,11 @@ The 7-track prep plan is integrated: [ml-job-prep-plan.md](ml-job-prep-plan.md) 
 milestones), [roadmap.md](roadmap.md) (the whole search as checkable weeks),
 [study-guide.md](study-guide.md) (the day-to-day LeetCode routine + review checklist for the
 two daily habits), [interview-prep.md](interview-prep.md) (stories, technical review),
-[amazon-lp.md](amazon-lp.md) (LP map). Seven target companies are on the board as leads; the
-daily habits now mirror the build phase (LeetCode + study block). Coding prep is **LeetCode**
-(Premium — company tags + frequency sort), not NeetCode.
+[amazon-lp.md](amazon-lp.md) (LP map), [resume-prep.md](resume-prep.md) (CV → industry resume,
+LinkedIn), [job-search-ops.md](job-search-ops.md) (sourcing, referral sweep, application
+hygiene). Seven target companies are on the board as leads; the daily habits now mirror the
+build phase (LeetCode + study block). Coding prep is **LeetCode** (Premium — company tags +
+frequency sort), not NeetCode.
 
 The board's **Offer** stage was removed for now (pipeline is lead → applied → screen →
 interviewing). Both `board/app.js` and `board/render.py` carry a comment on how to restore it.
