@@ -1,3 +1,95 @@
 {
-  "applications": []
+  "applications": [
+    {
+      "id": "amazon",
+      "company": "Amazon",
+      "role": "Applied Scientist (Fall 2026 intern + FT 2027)",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Submit Fall internship app",
+      "nextStepDate": "2026-07-26",
+      "link": "",
+      "notes": "Primary target. AS loops weight Leadership Principles + A/B testing/causal inference — plays to data-mining background. SageMaker for the portfolio project. See amazon-lp.md."
+    },
+    {
+      "id": "google",
+      "company": "Google",
+      "role": "Machine Learning Engineer (NYC)",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Referral sweep",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "Big-tech MLE, NYC office. Heavy on Track 1 coding + Track 4 system design (search/recsys ranking)."
+    },
+    {
+      "id": "meta",
+      "company": "Meta",
+      "role": "Machine Learning Engineer (NYC)",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Referral sweep",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "NYC MLE. News-feed/video recsys (two-tower + ranking) is a design staple — practice it out loud."
+    },
+    {
+      "id": "bloomberg",
+      "company": "Bloomberg",
+      "role": "AI / ML Engineer",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Research teams + apply",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "NYC-based, strong ML/NLP org. Ranking metrics (NDCG/MAP/MRR) and search relevance relevant."
+    },
+    {
+      "id": "tiktok",
+      "company": "TikTok / ByteDance",
+      "role": "Machine Learning Engineer",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Find NYC ML openings",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "Recommendation-heavy; the two-tower + ranking design is directly on-target. Fast loops."
+    },
+    {
+      "id": "quant-firms",
+      "company": "Quant research (pick firms)",
+      "role": "ML / Quant Researcher",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Choose 2–3 concrete firms",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "PLACEHOLDER — concretize. NYC candidates: Two Sigma, Jane Street, Citadel/Citadel Securities, D. E. Shaw, Hudson River Trading. They screen stats/prob, A/B testing, and SQL hard. Replace with real firms."
+    },
+    {
+      "id": "health-ai-nyc",
+      "company": "NYC health-AI (pick firms)",
+      "role": "Applied Scientist / MLE (health)",
+      "status": "lead",
+      "source": "ML job prep plan — target list",
+      "applied": "",
+      "lastTouch": "",
+      "nextStep": "Choose 2–3 concrete firms",
+      "nextStepDate": "",
+      "link": "",
+      "notes": "PLACEHOLDER — concretize. Your differentiator (health ML). Candidates to research: Flatiron Health, Cedar, Komodo Health, Truveta, plus NYU/Mount Sinai/Weill Cornell AI groups. Replace with real firms."
+    }
+  ]
 }

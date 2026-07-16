@@ -2,6 +2,24 @@
 
 Picking back up on the Windows machine. Start with `./bin/bootstrap`, then `./bin/board`.
 
+## ML job prep plan is now live (added 2026-07-16)
+
+The 7-track prep plan is integrated: [ml-job-prep-plan.md](ml-job-prep-plan.md) (schedule,
+milestones), [interview-prep.md](interview-prep.md) (stories, technical review),
+[amazon-lp.md](amazon-lp.md) (LP map). Seven target companies are on the board as leads;
+the daily habits now mirror the build phase (LeetCode + study block).
+
+Next actions:
+
+- [ ] **Concretize the two placeholder leads** — `quant-firms` and `health-ai-nyc` are
+  category placeholders; pick 2–3 real firms each (candidates listed in their card notes)
+  and split them into real cards.
+- [ ] **Jul 26 milestone** — 10–12 Fall internship apps, resume final. Amazon intern app is
+  the first concrete deadline on the board.
+- [ ] **Start drafting STAR stories** — the five in interview-prep.md, then map to Amazon LPs.
+- [ ] **Create the `ml-job-prep` code repo** when you write your first solution. Code does
+  NOT go in `career` (prose-only) — see the "Where the code lives" section of the plan.
+
 ## Needs Chengyang
 
 - [ ] **Google Scholar URL** — `career-docs/resume.tex` links to bare
