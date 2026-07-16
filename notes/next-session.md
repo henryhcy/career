@@ -51,9 +51,11 @@ industry resume (in sync across local / Overleaf / GitHub at commit `54c915e`):
   Overleaf's main document is set to `resume.tex`, and that `fontawesome5` (pulled in by
   `style.sty`, currently unused) doesn't error — drop it from the preamble if it does.
 - [ ] **Confirm the skill additions** (scikit-learn, NumPy, pandas, RAG, multi-agent systems).
-- [ ] **CRAFT citation** — the Publications entry uses a placeholder title + "et al." (see the
-  `TODO` comment in `resume.tex` line 40). Needs the exact paper title and full author list from
-  the CRAFT Overleaf draft (Claude can't access that project). Confirm first-author order too.
+- [ ] **CRAFT author list** — title + details are now finalized from the SDM 2026 paper PDF
+  ("CRAFT: LLM-Based Iterative Refinement for Temporal Reasoning over Clinical Narratives";
+  MedTempo, 5,347 narratives / 3,166 labeled). The paper PDF is **anonymized**, so the
+  Publications entry still uses "He, Chengyang, et al." — replace with the full author list
+  (see the `TODO` in `resume.tex`).
 - [ ] **Look at the board.** It was built and API-tested on a Mac but never viewed in
   a browser — there was no screenshot tool. Layout, spacing, and dark mode are
   unverified by eye.
