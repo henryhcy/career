@@ -20,13 +20,13 @@
     "notes": ""
   },
   "targets": {
-    "roles": ["Applied Scientist", "Machine Learning Engineer"],
+    "roles": ["Applied Scientist", "Machine Learning Engineer", "NLP Engineer", "ML Research Engineer", "Data Scientist"],
     "locations": ["New York, NY", "Remote (US)"],
-    "fullTimeStart": "2027",
-    "internshipStart": "Fall 2026",
-    "openToInternship": true
+    "fullTimeStart": "May 2027",
+    "openToInternship": false,
+    "_note": "May 2027 graduation is locked; used identically on every application. Internship door is closed (no returning-student status). See target-roles.md / job-search-strategy.md."
   },
-  "summary": "CS/ML PhD candidate (Data Science, Stevens; expected Summer 2027) focused on LLM agents, health ML, and temporal clinical modeling; four peer-reviewed publications including SIAM SDM 2026.",
+  "summary": "CS/ML PhD candidate (Data Science, Stevens; expected May 2027) focused on multi-agent LLM systems, verifier-guided reasoning, and temporal modeling; four peer-reviewed publications including SIAM SDM 2026.",
   "education": [
     {
       "school": "Stevens Institute of Technology",
@@ -34,7 +34,7 @@
       "field": "Data Science",
       "location": "Hoboken, NJ",
       "start": "2022-09",
-      "end": "2027-06",
+      "end": "2027-05",
       "endNote": "expected",
       "gpa": "",
       "notes": "Advisor: Dr. Ping Wang"
