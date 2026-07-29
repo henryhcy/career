@@ -15,9 +15,8 @@
     }
   },
   "workEligibility": {
-    "_note": "FILL THESE — they gate almost every application. Use true/false.",
-    "authorizedToWorkInUS": null,
-    "requiresSponsorshipNowOrFuture": null,
+    "authorizedToWorkInUS": true,
+    "requiresSponsorshipNowOrFuture": true,
     "notes": ""
   },
   "targets": {
