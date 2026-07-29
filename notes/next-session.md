@@ -2,6 +2,27 @@
 
 Picking back up on the Windows machine. Start with `./bin/bootstrap`, then `./bin/board`.
 
+## Strategy pivot to May 2027 (added 2026-07-29)
+
+Locked a **May 2027 graduation** and a **two-wave** plan: big-tech new-grad in fall 2026
+(Track B) and strong-fit full-time in spring 2027 (Track A); **no internship**. Authoritative
+now: [../target-roles.md](../target-roles.md), [../job-search-strategy.md](../job-search-strategy.md),
+[../interview-prep-plan.md](../interview-prep-plan.md) (repo root).
+
+Done in response:
+- **`roadmap.json` rebuilt** around the new timeline (Foundation → Big-Tech Wave → Bridge →
+  Strong-Fit Wave → Graduate); `done` reset (old task ids are gone).
+- **CV/resume:** graduation → "Expected May 2027"; CV research interests reframed method-first;
+  `profile.json` aligned (May 2027, internship closed, broader role list).
+- **Old notes reconciled:** `roadmap.md` is now a pointer; `ml-job-prep-plan.md` carries a
+  "superseded" banner (its 7 tracks/resources stay useful); `study-guide.md` points to the new
+  roadmap (its techniques stay valid).
+
+Still to reconcile / decide:
+- **Board leads are the OLD target list** (Amazon/Google/Meta/Bloomberg/TikTok/quant/health-AI).
+  Refresh with `target-roles.md` Tier 1 (health-tech / clinical-NLP) when ready.
+- Everything under "ML job prep plan is now live" below predates the pivot — treat as history.
+
 ## ML job prep plan is now live (added 2026-07-16)
 
 The 7-track prep plan is integrated: [ml-job-prep-plan.md](ml-job-prep-plan.md) (schedule,
@@ -22,8 +43,9 @@ Next actions:
 - [ ] **Concretize the two placeholder leads** — `quant-firms` and `health-ai-nyc` are
   category placeholders; pick 2–3 real firms each (candidates listed in their card notes)
   and split them into real cards.
-- [ ] **Jul 26 milestone** — 10–12 Fall internship apps, resume final. Amazon intern app is
-  the first concrete deadline on the board.
+- [ ] **Foundation phase (now, per `roadmap.json`)** — rebuild coding fluency, refresh ML
+  breadth, lock the method-first narrative, warm referrals for both tracks. (The old "Jul 26
+  internship apps" milestone is void — internship path closed by the May 2027 date.)
 - [ ] **Start drafting STAR stories** — the five in interview-prep.md, then map to Amazon LPs.
 - [ ] **Create the `ml-job-prep` code repo** when you write your first solution. Code does
   NOT go in `career` (prose-only) — see the "Where the code lives" section of the plan.

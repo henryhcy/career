@@ -1,401 +1,194 @@
 {
+  "_about": "Week-by-week what-to-learn-and-practice plan, rebuilt around the May-2027-graduation strategy (see target-roles.md, job-search-strategy.md, interview-prep-plan.md). Two application waves: big-tech new-grad in fall 2026 (Track B), strong-fit full-time in spring 2027 (Track A). Daily execution is tracked by the habits panel; this sets the weekly focus. Study areas: Coding/DSA, ML breadth, DL/NLP/LLM depth, ML system design, research deep-dive, behavioral.",
   "phases": [
     {
-      "name": "Build",
-      "range": "Jul 13 – Aug 30",
+      "name": "Foundation",
+      "range": "Jul 27 – Sep 6",
+      "detail": "Rebuild fundamentals + lock the narrative before big-tech reqs open",
       "weeks": [
         {
-          "id": "w01",
-          "label": "Jul 13–19",
-          "start": "2026-07-13",
-          "end": "2026-07-19",
+          "id": "fnd1", "label": "Jul 27 – Aug 2", "start": "2026-07-27", "end": "2026-08-02",
           "tasks": [
-            {
-              "id": "w01-lc",
-              "text": "LeetCode: Arrays & Hashing → Two Pointers (~6, cum ~6)"
-            },
-            {
-              "id": "w01-study",
-              "text": "Study: ML breadth warm-up — bias–variance, regularization; skim Designing ML Systems ch. 1"
-            },
-            {
-              "id": "w01-source",
-              "text": "Sourcing: set up job alerts; first sweep; concretize the quant + health-AI placeholder leads"
-            },
-            {
-              "id": "w01-apply",
-              "text": "Apply: start Fall internship apps — Amazon first (Jul 26 deadline)"
-            }
+            { "id": "fnd1-code", "text": "Coding: restart — Arrays & Hashing, Two Pointers; rebuild Python fluency (collections, heapq, comprehensions)" },
+            { "id": "fnd1-ml", "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation" },
+            { "id": "fnd1-narr", "text": "Narrative: lock the 30-sec intro + method-first arc (Classify -> Extract -> Order -> Verify)" },
+            { "id": "fnd1-ops", "text": "Ops: resume/CV final; start referral lists for both tracks" }
           ]
         },
         {
-          "id": "w02",
-          "label": "Jul 20–26",
-          "start": "2026-07-20",
-          "end": "2026-07-26",
+          "id": "fnd2", "label": "Aug 3 – 9", "start": "2026-08-03", "end": "2026-08-09",
           "tasks": [
-            {
-              "id": "w02-lc",
-              "text": "LeetCode: Sliding Window → Stack (~8, cum ~14)"
-            },
-            {
-              "id": "w02-study",
-              "text": "Study: metrics (ROC-AUC vs PR-AUC, NDCG/MAP/MRR); one system-design read"
-            },
-            {
-              "id": "w02-resume",
-              "text": "Resume: finish v1; update LinkedIn; draft referral one-pager"
-            },
-            {
-              "id": "w02-apply",
-              "text": "Sourcing: submit intern apps; log each on the board same day"
-            },
-            {
-              "id": "w02-ms",
-              "text": "Jul 26: 10–12 Fall internship apps submitted; resume final; tracker live",
-              "milestone": true
-            }
+            { "id": "fnd2-code", "text": "Coding: Sliding Window, Stack" },
+            { "id": "fnd2-ml", "text": "ML breadth: metrics — precision/recall/F1, ROC-AUC vs PR-AUC, calibration, class imbalance" },
+            { "id": "fnd2-dl", "text": "DL/LLM: transformer, attention, positional encodings, tokenization (refresh cold)" },
+            { "id": "fnd2-beh", "text": "Behavioral: draft 2 STAR stories from HALO/BIDMC" }
           ]
         },
         {
-          "id": "w03",
-          "label": "Jul 27 – Aug 2",
-          "start": "2026-07-27",
-          "end": "2026-08-02",
+          "id": "fnd3", "label": "Aug 10 – 16", "start": "2026-08-10", "end": "2026-08-16",
           "tasks": [
-            {
-              "id": "w03-lc",
-              "text": "LeetCode: Binary Search → Linked List (~8, cum ~22)"
-            },
-            {
-              "id": "w03-study",
-              "text": "Study: classical ML (trees → RF vs GBM); begin portfolio project (trains locally)"
-            },
-            {
-              "id": "w03-scratch",
-              "text": "Track 3: linear + logistic regression from scratch (NumPy)"
-            }
+            { "id": "fnd3-code", "text": "Coding: Binary Search, Linked List" },
+            { "id": "fnd3-ml", "text": "ML breadth: logistic regression, trees/GBMs, k-means, basic Bayesian (ties to Gulf War clustering)" },
+            { "id": "fnd3-res", "text": "Research deep-dive: MERMAID talking points (claim decomposition, memory-augmented reason-act, stopping criteria)" },
+            { "id": "fnd3-beh", "text": "Behavioral: 2 research STAR stories; map stories to Amazon LPs" }
           ]
         },
         {
-          "id": "w04",
-          "label": "Aug 3–9",
-          "start": "2026-08-03",
-          "end": "2026-08-09",
+          "id": "fnd4", "label": "Aug 17 – 23", "start": "2026-08-17", "end": "2026-08-23",
           "tasks": [
-            {
-              "id": "w04-lc",
-              "text": "LeetCode: Trees (~8, cum ~30)"
-            },
-            {
-              "id": "w04-study",
-              "text": "Study: deep-learning core (backprop, norm, dropout); project → FastAPI endpoint"
-            }
+            { "id": "fnd4-code", "text": "Coding: Trees, Graphs (BFS/DFS)" },
+            { "id": "fnd4-sd", "text": "System design: RAG system; clinical entity-extraction pipeline (OCR -> NER -> post-processing, from HALO)" },
+            { "id": "fnd4-dl", "text": "DL/LLM: pretraining vs fine-tuning, PEFT/LoRA, RLHF (conceptual); decoding, hallucination/faithfulness" },
+            { "id": "fnd4-res", "text": "Research deep-dive: generator-verifier temporal framework (CRAFT)" }
           ]
         },
         {
-          "id": "w05",
-          "label": "Aug 10–16",
-          "start": "2026-08-10",
-          "end": "2026-08-16",
+          "id": "fnd5", "label": "Aug 24 – 30", "start": "2026-08-24", "end": "2026-08-30",
           "tasks": [
-            {
-              "id": "w05-lc",
-              "text": "LeetCode: Heap / PQ → Backtracking (~8, cum ~38)"
-            },
-            {
-              "id": "w05-study",
-              "text": "Study: attention & transformers cold; project → Dockerize"
-            },
-            {
-              "id": "w05-ms",
-              "text": "Aug 10: 30 LeetCode done; model + API working locally",
-              "milestone": true
-            }
+            { "id": "fnd5-code", "text": "Coding: Heaps, intro 1-D DP; ML-flavored coding (implement k-means, a metric, small training loop, tokenization)" },
+            { "id": "fnd5-llm", "text": "LLM depth: RAG internals — chunking, embeddings, vector search, reranking, failure modes" },
+            { "id": "fnd5-sd", "text": "System design: LLM evaluation harness; multi-agent verification loop" },
+            { "id": "fnd5-ops", "text": "Ops: finalize referral lists; warm intros for big-tech" }
           ]
         },
         {
-          "id": "w06",
-          "label": "Aug 17–23",
-          "start": "2026-08-17",
-          "end": "2026-08-23",
+          "id": "fnd6", "label": "Aug 31 – Sep 6", "start": "2026-08-31", "end": "2026-09-06",
           "tasks": [
-            {
-              "id": "w06-lc",
-              "text": "LeetCode: Graphs (~9, cum ~47)"
-            },
-            {
-              "id": "w06-study",
-              "text": "Study: A/B testing + causal inference; project → deploy to AWS, add W&B"
-            },
-            {
-              "id": "w06-scratch",
-              "text": "Track 3: k-means, k-NN, 2-layer NN with manual backprop"
-            }
-          ]
-        },
-        {
-          "id": "w07",
-          "label": "Aug 24–30",
-          "start": "2026-08-24",
-          "end": "2026-08-30",
-          "tasks": [
-            {
-              "id": "w07-lc",
-              "text": "LeetCode: 1-D DP (~8, cum ~55)"
-            },
-            {
-              "id": "w07-study",
-              "text": "Study: system design — recsys (two-tower + ranking) out loud; project → CI + README"
-            },
-            {
-              "id": "w07-ms",
-              "text": "Aug 24: 55 problems; project deployed on AWS with W&B + CI",
-              "milestone": true
-            }
+            { "id": "fnd6-code", "text": "Coding: 1-D DP; redo failed list; first timed mock (coding)" },
+            { "id": "fnd6-narr", "text": "Narrative: research deep-dive end-to-end; 'why industry / why this team' answers" },
+            { "id": "fnd6-ops", "text": "Ops: prep big-tech new-grad application materials; referral asks going out" },
+            { "id": "fnd6-ms", "text": "Foundation done: coding fluent, narrative locked, referrals warm, materials ready", "milestone": true }
           ]
         }
       ]
     },
     {
-      "name": "Defense",
-      "range": "Aug 31 – Sep 20",
+      "name": "Big-Tech Wave (Track B)",
+      "range": "Sep 7 – Nov 29",
+      "detail": "New-grad applications out early, then interview. Coding + system design + behavioral heavy.",
       "weeks": [
         {
-          "id": "w08",
-          "label": "Aug 31 – Sep 6",
-          "start": "2026-08-31",
-          "end": "2026-09-06",
+          "id": "btw1", "label": "Sep 7 – 13", "start": "2026-09-07", "end": "2026-09-13",
           "tasks": [
-            {
-              "id": "w08-lc",
-              "text": "LeetCode: taper to maintenance (~5, redo failed; cum ~60)"
-            },
-            {
-              "id": "w08-resume",
-              "text": "Resume: refresh with paper #3 (under review) + deployed project + GitHub link"
-            },
-            {
-              "id": "w08-source",
-              "text": "Sourcing: front-load FT applications this week; start the referral sweep"
-            },
-            {
-              "id": "w08-ms",
-              "text": "Aug 31: paper #3 submitted; 15+ full-time apps submitted; project write-up posted",
-              "milestone": true
-            }
+            { "id": "btw1-ms", "text": "Big-tech new-grad applications OUT (Amazon AS, Google, Meta, Microsoft/MSR, ByteDance, Scale AI, Samsung) — early + referral-backed", "milestone": true },
+            { "id": "btw1-code", "text": "Coding peak: 2-D DP (core), Greedy/Intervals" },
+            { "id": "btw1-beh", "text": "Behavioral: Amazon LP stories memorized (2 per top LP)" }
           ]
         },
         {
-          "id": "w09",
-          "label": "Sep 7–13",
-          "start": "2026-09-07",
-          "end": "2026-09-13",
+          "id": "btw2", "label": "Sep 14 – 20", "start": "2026-09-14", "end": "2026-09-20",
           "tasks": [
-            {
-              "id": "w09-lc",
-              "text": "LeetCode: 30 min/day maintenance only — everything else paused (cum ~64)"
-            }
+            { "id": "btw2-code", "text": "Coding: company-tagged (LeetCode Premium, frequency-sorted) for imminent loops; redo failed" },
+            { "id": "btw2-sd", "text": "System design 3x/week: recsys ranking, CTR prediction, fraud/anomaly" },
+            { "id": "btw2-ms", "text": "Paper 3 -> arXiv (~Sep) so 'under review at [venue]' points to something openable", "milestone": true }
           ]
         },
         {
-          "id": "w10",
-          "label": "Sep 14–20",
-          "start": "2026-09-14",
-          "end": "2026-09-20",
+          "id": "btw3", "label": "Sep 21 – 27", "start": "2026-09-21", "end": "2026-09-27",
           "tasks": [
-            {
-              "id": "w10-lc",
-              "text": "LeetCode: maintenance only (cum ~68)"
-            },
-            {
-              "id": "w10-ms",
-              "text": "Sep 20: proposal defense done",
-              "milestone": true
-            }
+            { "id": "btw3-loop", "text": "OA / phone screens begin; company-specific prep 2 days before each loop" },
+            { "id": "btw3-code", "text": "Coding: maintenance + company-tagged; weekly mock" },
+            { "id": "btw3-res", "text": "Keep research deep-dive sharp for science/AS screens" }
+          ]
+        },
+        {
+          "id": "btw4", "label": "Sep 28 – Oct 11", "start": "2026-09-28", "end": "2026-10-11",
+          "tasks": [
+            { "id": "btw4-loop", "text": "Active loops: behavioral + system design + coding per loop; write a retro in notes/ after each" },
+            { "id": "btw4-code", "text": "Keep coding warm; weekly mock" }
+          ]
+        },
+        {
+          "id": "btw5", "label": "Oct 12 – 25", "start": "2026-10-12", "end": "2026-10-25",
+          "tasks": [
+            { "id": "btw5-loop", "text": "Loops continue; tighten weak spots surfaced in retros; weekly mock" },
+            { "id": "btw5-code", "text": "Coding warm + company-tagged" }
+          ]
+        },
+        {
+          "id": "btw6", "label": "Oct 26 – Nov 15", "start": "2026-10-26", "end": "2026-11-15",
+          "tasks": [
+            { "id": "btw6-loop", "text": "Later loops / onsite finals; maintain coding (lighter)" },
+            { "id": "btw6-trackA", "text": "Start Track A target list — Tier 1 health-tech / clinical-NLP (Insitro, Biohub, Novo Nordisk, clinical-NLP startups)" }
+          ]
+        },
+        {
+          "id": "btw7", "label": "Nov 16 – 29", "start": "2026-11-16", "end": "2026-11-29",
+          "tasks": [
+            { "id": "btw7-loop", "text": "Finish Track B loops; begin Track A referral warming" },
+            { "id": "btw7-paper", "text": "Paper 4 push toward arXiv (~Dec)" }
           ]
         }
       ]
     },
     {
-      "name": "Interview",
-      "range": "Sep 21 – Oct 31",
+      "name": "Bridge",
+      "range": "Nov 30 – Feb 7",
+      "detail": "Get preprints up, keep coding warm, build the Track A pipeline.",
       "weeks": [
         {
-          "id": "w11",
-          "label": "Sep 21–27",
-          "start": "2026-09-21",
-          "end": "2026-09-27",
+          "id": "brg1", "label": "Nov 30 – Dec 20", "start": "2026-11-30", "end": "2026-12-20",
           "tasks": [
-            {
-              "id": "w11-lc",
-              "text": "LeetCode: finish 2-D DP (first 6) + Greedy/Intervals; heavy redo of failed list (~12, cum ~80)"
-            },
-            {
-              "id": "w11-study",
-              "text": "Study: system-design practice 3×/week starts; first mock interview"
-            }
+            { "id": "brg1-ms", "text": "Paper 4 -> arXiv as submittable (~Dec)", "milestone": true },
+            { "id": "brg1-code", "text": "Coding warm, lighter (~3/wk) so spring loops don't need a cold restart" },
+            { "id": "brg1-trackA", "text": "Build Track A target list + warm referrals; continue any live Track B loops" }
           ]
         },
         {
-          "id": "w12",
-          "label": "Sep 28 – Oct 4",
-          "start": "2026-09-28",
-          "end": "2026-10-04",
+          "id": "brg2", "label": "Dec 21 – Jan 10", "start": "2026-12-21", "end": "2027-01-10",
           "tasks": [
-            {
-              "id": "w12-lc",
-              "text": "LeetCode: push to target + company-tagged for imminent loops (~15, cum ~95–110)"
-            },
-            {
-              "id": "w12-ms",
-              "text": "Oct 1: ~110 problems total; all 6 system designs practiced once; referral sweep done",
-              "milestone": true
-            }
+            { "id": "brg2-preprint", "text": "Ensure papers 3 & 4 are both on arXiv with 'under review at [venue]'" },
+            { "id": "brg2-light", "text": "Holidays: light coding; research deep-dive refresh; rest" }
           ]
         },
         {
-          "id": "w13",
-          "label": "Oct 5–11",
-          "start": "2026-10-05",
-          "end": "2026-10-11",
+          "id": "brg3", "label": "Jan 11 – Feb 7", "start": "2027-01-11", "end": "2027-02-07",
           "tasks": [
-            {
-              "id": "w13-lc",
-              "text": "LeetCode: maintain (redo + company-tagged); weekly mock; Amazon LP stories"
-            }
-          ]
-        },
-        {
-          "id": "w14",
-          "label": "Oct 12–18",
-          "start": "2026-10-12",
-          "end": "2026-10-18",
-          "tasks": [
-            {
-              "id": "w14-prep",
-              "text": "Company-specific prep: 2 days before each loop, do that company's top frequency-sorted problems"
-            },
-            {
-              "id": "w14-ms",
-              "text": "Oct 15: 4+ mock interviews completed; Amazon LP stories memorized",
-              "milestone": true
-            }
-          ]
-        },
-        {
-          "id": "w15",
-          "label": "Oct 19–25",
-          "start": "2026-10-19",
-          "end": "2026-10-25",
-          "tasks": [
-            {
-              "id": "w15-loops",
-              "text": "Loops in flight; write a retro in notes/ after each; keep mocks weekly"
-            }
-          ]
-        },
-        {
-          "id": "w16",
-          "label": "Oct 26 – Nov 1",
-          "start": "2026-10-26",
-          "end": "2026-11-01",
-          "tasks": [
-            {
-              "id": "w16-loops",
-              "text": "Loops continue; update the board as cards move (screen → interviewing)"
-            }
+            { "id": "brg3-domain", "text": "Ramp Track A prep: domain interview prep (clinical NLP, IE, RAG, eval)" },
+            { "id": "brg3-essays", "text": "Draft 'why this company' templates; finalize Track A target list + referrals" },
+            { "id": "brg3-code", "text": "Light coding maintenance" }
           ]
         }
       ]
     },
     {
-      "name": "Close",
-      "range": "Nov 2 – Dec 20",
+      "name": "Strong-Fit Wave (Track A)",
+      "range": "Feb 8 – Apr 30",
+      "detail": "The core, highest-hit-rate track. Heaviest tailoring; research depth + domain framing + system design.",
       "weeks": [
         {
-          "id": "w17",
-          "label": "Nov 2–8",
-          "start": "2026-11-02",
-          "end": "2026-11-08",
+          "id": "sfw1", "label": "Feb 8 – 28", "start": "2027-02-08", "end": "2027-02-28",
           "tasks": [
-            {
-              "id": "w17-loops",
-              "text": "Run loops; company-tagged prep 2 days out; log every interview retro"
-            }
+            { "id": "sfw1-ms", "text": "Track A applications OUT (spring window) — tailored why-company essays, cover letters, domain framing per Tier 1 company", "milestone": true },
+            { "id": "sfw1-prep", "text": "Domain-specific interview prep + research deep-dives; light coding" }
           ]
         },
         {
-          "id": "w18",
-          "label": "Nov 9–15",
-          "start": "2026-11-09",
-          "end": "2026-11-15",
+          "id": "sfw2", "label": "Mar 1 – 31", "start": "2027-03-01", "end": "2027-03-31",
           "tasks": [
-            {
-              "id": "w18-loops",
-              "text": "Continue loops; tighten weak spots surfaced in retros"
-            }
+            { "id": "sfw2-loop", "text": "Active Track A loops: domain + system-design interviews; research deep-dive; cover letters per role; retros" },
+            { "id": "sfw2-code", "text": "Light coding maintenance" }
           ]
         },
         {
-          "id": "w19",
-          "label": "Nov 16–22",
-          "start": "2026-11-16",
-          "end": "2026-11-22",
+          "id": "sfw3", "label": "Apr 1 – 30", "start": "2027-04-01", "end": "2027-04-30",
           "tasks": [
-            {
-              "id": "w19-finals",
-              "text": "Onsite/virtual finals; keep LeetCode warm (~3/wk)"
-            }
+            { "id": "sfw3-loop", "text": "Finals + later Track A loops; compare offers; begin negotiation" },
+            { "id": "sfw3-prep", "text": "Keep research/domain prep sharp" }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Graduate & Convert",
+      "range": "May 2027",
+      "detail": "Close it out.",
+      "weeks": [
         {
-          "id": "w20",
-          "label": "Nov 23–29",
-          "start": "2026-11-23",
-          "end": "2026-11-29",
+          "id": "grad1", "label": "May 2027", "start": "2027-05-01", "end": "2027-05-31",
           "tasks": [
-            {
-              "id": "w20-light",
-              "text": "Thanksgiving week — lighter; follow-ups so nothing goes stale"
-            }
-          ]
-        },
-        {
-          "id": "w21",
-          "label": "Nov 30 – Dec 6",
-          "start": "2026-11-30",
-          "end": "2026-12-06",
-          "tasks": [
-            {
-              "id": "w21-finals",
-              "text": "Finals continue; start comparing offers; comp research per company"
-            }
-          ]
-        },
-        {
-          "id": "w22",
-          "label": "Dec 7–13",
-          "start": "2026-12-07",
-          "end": "2026-12-13",
-          "tasks": [
-            {
-              "id": "w22-negotiate",
-              "text": "Negotiate; use the companies/*.md comp tables"
-            }
-          ]
-        },
-        {
-          "id": "w23",
-          "label": "Dec 14–20",
-          "start": "2026-12-14",
-          "end": "2026-12-20",
-          "tasks": [
-            {
-              "id": "w23-ms",
-              "text": "Dec 20: signed offer, or final-round loops in flight before the final semester",
-              "milestone": true
-            }
+            { "id": "grad1-ms", "text": "Final loops; negotiate; decide & accept; graduate", "milestone": true },
+            { "id": "grad1-opt", "text": "Confirm OPT start dates for a summer-2027 start with the international student office" }
           ]
         }
       ]

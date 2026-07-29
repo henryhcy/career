@@ -95,10 +95,11 @@ to it. It binds to localhost deliberately; don't make it listen on 0.0.0.0.
 | `applications.md` | **Generated.** Never hand-edit — `./bin/render` overwrites it |
 | `board/` | Server, renderer, and UI |
 
-`roadmap.json` mirrors the prose in `notes/roadmap.md` (that file stays the readable
-GitHub version). The board reads/writes the JSON; keep the two in step by hand if the
-plan changes. The client PUTs the whole object back, so `phases` round-trips untouched
-and only `done` changes from the UI.
+`roadmap.json` is the single source of truth for the weekly plan — rebuilt Jul 2026 around
+the May-2027 two-wave strategy in `target-roles.md` / `job-search-strategy.md` /
+`interview-prep-plan.md` (repo root). `notes/roadmap.md` is now just a pointer to it. The
+board reads/writes the JSON; the client PUTs the whole object back, so `phases` round-trips
+untouched and only `done` changes from the UI.
 
 Status vocabulary is fixed. `lead` → `applied` → `screen` → `interviewing` are the
 pipeline; `rejected` / `withdrawn` / `ghosted` are terminal. Don't invent new ones —

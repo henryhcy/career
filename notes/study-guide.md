@@ -1,13 +1,19 @@
 # Study guide — what to actually do each day
 
-The operational companion to [ml-job-prep-plan.md](ml-job-prep-plan.md). The plan is the
-*what and when*, [roadmap.md](roadmap.md) is the *week-by-week arc you can check off*, and
-this is the *how* — tied to the two daily checks on the board:
+The *how-to* for daily coding + study practice. The **week-by-week arc** is the board's
+`roadmap.json` (rebuilt around the May-2027 two-wave strategy — see
+[../job-search-strategy.md](../job-search-strategy.md) and
+[../interview-prep-plan.md](../interview-prep-plan.md)). This guide is the *how*, tied to the
+two daily checks on the board:
 
 - **"One LeetCode problem"** → Part 1 below (the LeetCode routine).
 - **"One study/project block"** → Part 2 below (what to review or learn).
 
 Tick the box only when you actually did the thing. Streaks are the point.
+
+> **Note (Jul 2026):** the *techniques* below are current, but any specific dated milestones or
+> cumulative problem counts (e.g., "110 by Oct 1") are leftovers from the earlier plan — follow
+> the weekly cadence in `roadmap.json` instead.
 
 ---
 

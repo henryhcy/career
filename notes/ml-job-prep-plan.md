@@ -1,5 +1,13 @@
 # ML Job Prep Plan — Applied Scientist / ML Engineer
 
+> **⚠️ Superseded (Jul 2026).** The *timeline, targets, and graduation date* below are from an
+> earlier plan (Summer 2027, internship-first, Sep defense) that has been **replaced**. The
+> current strategy lives in [../target-roles.md](../target-roles.md),
+> [../job-search-strategy.md](../job-search-strategy.md), and
+> [../interview-prep-plan.md](../interview-prep-plan.md); the weekly plan is the board's
+> `roadmap.json`. **Still useful here:** the 7 skill tracks and their resources, as a study
+> reference. Ignore the dates, milestones, and target list.
+
 **Profile:** CS/ML PhD (data mining + health ML), graduating Summer 2027, NYC-first.
 **Targets:** Amazon Applied Scientist, MLE at big tech (Google/Meta NYC), Bloomberg AI,
 quant research, NYC health-AI companies, TikTok/ByteDance. (Logged as leads on the board.)
