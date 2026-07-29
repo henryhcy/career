@@ -87,8 +87,44 @@ You lose real time fumbling the standard library. Get fluent with:
 - `sorted(..., key=...)`, tuple sorting, `float("inf")`
 - string ops (`join`, slicing, `ord`/`chr`), and why strings are immutable
 
-> When the code repo exists, keep solutions in `ml-job-prep/leetcode/`, one file per problem
-> named by pattern, plus `failed_list.md`. Not in this repo — see the plan.
+> Solutions live in the `ml-job-prep` repo (`leetcode/<pattern>/`), one file per problem, plus
+> `failed_list.md`. Not in this repo — see the plan.
+
+### Complexity basics (Big-O) — know the *why*
+
+Big-O is a **growth rate** as n → ∞: it drops constants and lower-order terms, and describes the
+worst case unless you say otherwise. Interviewers want you to state it *and* justify it.
+
+Costs of the operations you use every day (CPython):
+
+| Operation | Time |
+| --- | --- |
+| list index / append (amortized) | O(1) |
+| list `x in lst`, `insert(0,…)`, `pop(0)` | O(n) |
+| dict / set insert, lookup, delete (avg) | O(1) |
+| `heappush` / `heappop` · `heapify` · peek | O(log n) · O(n) · O(1) |
+| `sorted(...)` / `list.sort()` | O(n log n) |
+| `Counter(nums)` | O(n) |
+| building a string with `+=` in a loop | O(n²) — use a list + `join` → O(n) |
+
+**Why `sorted()` is O(n log n).** Any *comparison-based* sort has a proven lower bound of
+Ω(n log n): there are n! possible orderings, and each comparison roughly halves the possibilities,
+so ≈ log₂(n!) ≈ n log n comparisons are needed to pin down the right one. Python's Timsort hits
+that bound (and is O(n) on already-sorted runs).
+
+**Why bucket/counting sort can beat it.** That lower bound is *only* for comparison sorts. When
+keys are bounded integers you place items by index instead of comparing → O(n). That's why bucket
+sort does Top-K Frequent in O(n) (frequencies are bounded by n). Caveat from the 347 exercise:
+Big-O is growth, not wall-clock at small n — constant factors and allocation cost can flip a
+micro-benchmark, and LeetCode's timer is noisy.
+
+**Amortized.** `list.append` is O(1) *amortized* — an occasional resize copies O(n), but spread
+over many appends it averages O(1). The same idea (hashing) makes dict/set O(1) average.
+
+**Space.** Count memory beyond the input; recursion adds O(depth) stack. Trade deliberately —
+a size-k heap is O(k) space for O(n log k) time; bucket sort is O(n) space for O(n) time.
+
+**Reference:** bigocheatsheet.com; wiki.python.org/moin/TimeComplexity.
 
 ---
 

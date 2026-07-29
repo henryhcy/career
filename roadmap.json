@@ -44,6 +44,10 @@
               "text": "Coding · Two Pointers set — once Arrays & Hashing feels comfortable"
             },
             {
+              "id": "fnd1-complexity",
+              "text": "Complexity basics: Big-O; costs of common ops (sort, dict/set/list/heap); why sorting is n log n; amortized + space (see study-guide.md)"
+            },
+            {
               "id": "fnd1-ml",
               "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation"
             },
@@ -459,6 +463,7 @@
     }
   ],
   "done": {
-    "fnd1-ah242": true
+    "fnd1-ah242": true,
+    "fnd1-ah347": true
   }
 }
