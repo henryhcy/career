@@ -17,6 +17,8 @@ Done in response:
 - **Old notes reconciled:** `roadmap.md` is now a pointer; `ml-job-prep-plan.md` carries a
   "superseded" banner (its 7 tracks/resources stay useful); `study-guide.md` points to the new
   roadmap (its techniques stay valid).
+- **`notes/interview-drills.md`** (added 2026-07-29): detailed **8-week drill plan** for coding
+  + system design + behavioral (Jul 27 – Sep 20), the granular layer under `roadmap.json`.
 
 Still to reconcile / decide:
 - **Board leads are the OLD target list** (Amazon/Google/Meta/Bloomberg/TikTok/quant/health-AI).

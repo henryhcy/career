@@ -9,6 +9,9 @@ two daily checks on the board:
 - **"One LeetCode problem"** → Part 1 below (the LeetCode routine).
 - **"One study/project block"** → Part 2 below (what to review or learn).
 
+For the **scheduled first-8-weeks plan** across coding, system design, and behavioral (which
+patterns/designs/stories to do each week), see [interview-drills.md](interview-drills.md).
+
 Tick the box only when you actually did the thing. Streaks are the point.
 
 > **Note (Jul 2026):** the *techniques* below are current, but any specific dated milestones or
