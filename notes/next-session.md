@@ -27,6 +27,10 @@ Next actions:
 - [ ] **Start drafting STAR stories** — the five in interview-prep.md, then map to Amazon LPs.
 - [ ] **Create the `ml-job-prep` code repo** when you write your first solution. Code does
   NOT go in `career` (prose-only) — see the "Where the code lives" section of the plan.
+- [ ] **`profile.json`** (repo root) is the single source of truth for application autofill —
+  used to populate Simplify/Indeed once and to copy from on forms. Still needs Chengyang to
+  fill `workEligibility` (US work authorization + sponsorship). No Indeed API link is possible
+  (deprecated for job seekers; scraping is against ToS) — autofill via Simplify is the path.
 
 ## Resume + CV (2026-07-16)
 

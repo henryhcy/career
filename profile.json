@@ -1,0 +1,119 @@
+{
+  "_about": "Single source of truth for job-application autofill. Nothing here is compiled by a tool in this repo; it's the canonical set of facts to (a) fill your Simplify/Indeed profile once and (b) copy from when a form asks for something. Keep in sync with career-docs/cv.tex. Never add SSN, date of birth, or government ID numbers.",
+  "personal": {
+    "firstName": "Chengyang",
+    "lastName": "He",
+    "preferredName": "",
+    "email": "che14@stevens.edu",
+    "phone": "857-272-3493",
+    "location": { "city": "Hoboken", "state": "NJ", "country": "USA" },
+    "links": {
+      "linkedin": "https://linkedin.com/in/chengyang-he",
+      "github": "https://github.com/henryhcy",
+      "scholar": "https://scholar.google.com/citations?user=i8Oj3QIAAAAJ",
+      "website": ""
+    }
+  },
+  "workEligibility": {
+    "_note": "FILL THESE — they gate almost every application. Use true/false.",
+    "authorizedToWorkInUS": null,
+    "requiresSponsorshipNowOrFuture": null,
+    "notes": ""
+  },
+  "targets": {
+    "roles": ["Applied Scientist", "Machine Learning Engineer"],
+    "locations": ["New York, NY", "Remote (US)"],
+    "fullTimeStart": "2027",
+    "internshipStart": "Fall 2026",
+    "openToInternship": true
+  },
+  "summary": "CS/ML PhD candidate (Data Science, Stevens; expected Summer 2027) focused on LLM agents, health ML, and temporal clinical modeling; four peer-reviewed publications including SIAM SDM 2026.",
+  "education": [
+    {
+      "school": "Stevens Institute of Technology",
+      "degree": "Ph.D.",
+      "field": "Data Science",
+      "location": "Hoboken, NJ",
+      "start": "2022-09",
+      "end": "2027-06",
+      "endNote": "expected",
+      "gpa": "",
+      "notes": "Advisor: Dr. Ping Wang"
+    },
+    {
+      "school": "Boston University",
+      "degree": "M.S.",
+      "field": "Computer Science",
+      "location": "Boston, MA",
+      "start": "2019",
+      "end": "2021",
+      "gpa": ""
+    },
+    {
+      "school": "Boston University",
+      "degree": "B.A.",
+      "field": "Mathematics & Computer Science",
+      "location": "Boston, MA",
+      "start": "2015",
+      "end": "2019",
+      "gpa": ""
+    }
+  ],
+  "experience": [
+    {
+      "title": "Data Scientist",
+      "company": "HALO, LLC",
+      "location": "Boston, MA",
+      "start": "2021-11",
+      "end": "2022-03",
+      "bullets": [
+        "Built an end-to-end information-extraction pipeline (OCR -> spaCy NER -> rule-based post-processing) with Beth Israel Deaconess Medical Center, extracting structured clinical insights from 5,000+ scanned colonoscopy reports.",
+        "Boosted entity-level F1 by 28% and cut clinician manual review time by 45%; migrated the annotation workflow from Prodigy to Doccano, saving $1,700/year in licensing while preserving consistency."
+      ]
+    },
+    {
+      "title": "Research Assistant",
+      "company": "Boston University",
+      "location": "Boston, MA",
+      "start": "2020-08",
+      "end": "2021-12",
+      "bullets": [
+        "Modeled symptom clusters in 144 veteran self-reports (K-means, hierarchical clustering, Gaussian-Bayesian networks) with silhouette/elbow selection and t-test validation.",
+        "Built a bilingual (Chinese/English) media-analytics pipeline over 1M+ news articles; fine-tuned BERT on HPC clusters, reaching 90% accuracy (5-fold cross-validation)."
+      ]
+    },
+    {
+      "title": "Algorithm Engineer Intern",
+      "company": "Cloudwalk, Inc.",
+      "location": "Shanghai, China",
+      "start": "2019-06",
+      "end": "2019-08",
+      "bullets": ["Facial-recognition model optimization."]
+    },
+    {
+      "title": "Data Engineer Intern",
+      "company": "IBM China",
+      "location": "Beijing, China",
+      "start": "2018-06",
+      "end": "2018-08",
+      "bullets": ["Chatbot sentiment analysis."]
+    }
+  ],
+  "skills": {
+    "languages": ["Python", "SQL", "R", "Java", "LaTeX"],
+    "mlDl": ["PyTorch", "scikit-learn", "NumPy", "pandas", "HuggingFace Transformers"],
+    "llmReasoning": ["LLM Agents", "multi-agent systems", "Test-Time Reasoning", "Tool-Integrated Reasoning", "Retrieval-Augmented Generation (RAG)", "LangChain", "spaCy"],
+    "dataInfra": ["AWS", "Docker", "Weights & Biases", "MongoDB", "Git", "Linux/HPC", "Prodigy", "Doccano"]
+  },
+  "publications": [
+    { "authorsShort": "He, Chengyang, et al.", "title": "CRAFT: LLM-Based Iterative Refinement for Temporal Reasoning over Clinical Narratives", "venue": "SIAM International Conference on Data Mining (SDM)", "year": 2026, "status": "accepted", "firstAuthor": true },
+    { "authorsShort": "He, Chengyang, et al.", "title": "Task as Context Prompting for Accurate Medical Symptom Coding Using Large Language Models", "venue": "IEEE/ACM CHASE", "year": 2025, "status": "published", "firstAuthor": true },
+    { "authorsShort": "Sood, Palak, Chengyang He, et al.", "title": "Understanding Student Sentiment on Mental Health Support in Colleges Using Large Language Models", "venue": "IEEE BigData", "year": 2024, "status": "published", "firstAuthor": false },
+    { "authorsShort": "Zhang, Wenlong, Chengyang He, et al.", "title": "Natural Language Querying on Domain-Specific NoSQL Database with Large Language Models", "venue": "IEEE BIBM", "year": 2024, "status": "published", "firstAuthor": false },
+    { "authorsShort": "Cao, Yupeng, Chengyang He, et al.", "title": "MERMAID: Memory-Enhanced Retrieval and Reasoning with Multi-Agent Iterative Knowledge Grounding for Veracity Assessment", "venue": "arXiv:2601.22361", "year": 2026, "status": "under review", "firstAuthor": false }
+  ],
+  "honors": [
+    "NSF Student Travel Award, IEEE/ACM CHASE 2025",
+    "Stevens Institute of Technology Provost Doctoral Fellowship"
+  ]
+}
