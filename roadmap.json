@@ -58,6 +58,10 @@
             {
               "id": "fnd1-ops",
               "text": "Ops: resume/CV final; start referral lists for both tracks"
+            },
+            {
+              "id": "fnd1-exp",
+              "text": "Experimentation: hypothesis testing, p-values, CIs — be able to say what a p-value *isn't*"
             }
           ]
         },
@@ -80,8 +84,12 @@
               "text": "DL/LLM: transformer, attention, positional encodings, tokenization (refresh cold)"
             },
             {
-              "id": "fnd2-beh",
-              "text": "Behavioral: draft 2 STAR stories from HALO/BIDMC"
+              "id": "fnd2-exp",
+              "text": "Experimentation: A/B testing — design, power analysis, sample size, novelty & network effects. Rehearse \"failing to reject H0 != accepting H0\" (you lived this on the benchmark)"
+            },
+            {
+              "id": "fnd2-res",
+              "text": "Research deep-dive: the 3-minute version of the arc; draft the \"hardest part\" answer"
             }
           ]
         },
@@ -106,6 +114,10 @@
             {
               "id": "fnd3-beh",
               "text": "Behavioral: 2 research STAR stories; map stories to Amazon LPs"
+            },
+            {
+              "id": "fnd3-exp",
+              "text": "Experimentation: multiple comparisons and when correcting is the WRONG call; one- vs two-sided tests (straight from the thesis redesign)"
             }
           ]
         },
@@ -130,6 +142,10 @@
             {
               "id": "fnd4-res",
               "text": "Research deep-dive: generator-verifier temporal framework (CRAFT)"
+            },
+            {
+              "id": "fnd4-exp",
+              "text": "Experimentation: causal inference — difference-in-differences, propensity scoring"
             }
           ]
         },
@@ -154,6 +170,10 @@
             {
               "id": "fnd5-ops",
               "text": "Ops: finalize referral lists; warm intros for big-tech"
+            },
+            {
+              "id": "fnd5-exp",
+              "text": "Experimentation: exact vs asymptotic tests; what breaks when expected cell counts are small; power analysis. Rehearse your own significance suite ALOUD — it is worth nothing unsaid"
             }
           ]
         },
@@ -174,6 +194,15 @@
             {
               "id": "fnd6-ops",
               "text": "Ops: prep big-tech new-grad application materials; referral asks going out"
+            },
+            {
+              "id": "fnd6-exp",
+              "text": "ML breadth + experimentation: rapid-fire self-quiz across both; fix weak spots"
+            },
+            {
+              "id": "fnd6-beh",
+              "text": "BEHAVIORAL GATE (before apps go out): LP grid done (2 stories per top-8 LP), all 5 STAR stories aloud <2 min, plus the May-2027 timeline and venue answers",
+              "milestone": true
             },
             {
               "id": "fnd6-ms",

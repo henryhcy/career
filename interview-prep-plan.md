@@ -31,6 +31,8 @@ _Last updated: July 2026. Built around a May 2027 graduation and the two applica
 
 Applied Scientist / ML / NLP loops usually draw from these. Weight coding and system design more for Track B; weight research depth and domain framing more for Track A.
 
+**AS/RS weighting (set 2026-07-30).** The drill plan was originally three pillars — coding, system design, behavioral — which is the shape of an *MLE* loop. For an AS-primary search two things were added rather than swapped in: **experimentation & statistics** (area 2) and the **research deep-dive** (area 5, a round MLE loops don't run and the centerpiece for RS). Coding stays daily because it still gates the screen; system design stays 2×/week. **Behavioral is parked until Aug 10**, then runs weekly to a hard gate in Week 6 — finished *before* applications go out Sep 7. Week-by-week detail in [notes/interview-drills.md](notes/interview-drills.md).
+
 ### 1. Coding / data structures and algorithms
 - Python, LeetCode medium as the working level.
 - Core: arrays, strings, hashmaps, two pointers, sliding window, stacks/queues, trees, graphs (BFS/DFS), heaps, binary search, and introductory DP.

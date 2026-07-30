@@ -130,27 +130,39 @@ a size-k heap is O(k) space for O(n log k) time; bucket sort is O(n) space for O
 
 ## Part 2 — Study block (the review / learn habit)
 
-One focused block per weekday. **Don't study all seven tracks every day** — rotate, so each
-area gets real depth. Suggested rotation (mirrors the plan's weekly template):
+One focused block per weekday. **Don't study every area every day** — rotate, so each gets real
+depth. Area numbers refer to the six study areas in
+[../interview-prep-plan.md](../interview-prep-plan.md); the week-by-week version is
+[interview-drills.md](interview-drills.md).
 
 | Day | Study block focus |
 |---|---|
-| Mon | ML breadth topic (Track 2) |
-| Tue | ML system design: read + practice one design out loud (Track 4) |
-| Wed | ML breadth topic (Track 2) |
-| Thu | ML system design: read + practice one design (Track 4) |
-| Fri | One behavioral STAR story (Track 7) → map to an Amazon LP |
-| Sat | From-scratch implementation (Track 3) + a bit of LLM (Track 6) |
+| Mon | ML breadth topic (area 2) |
+| Tue | ML system design: read + practice one design out loud (area 4) |
+| Wed | Experimentation & statistics (area 2) |
+| Thu | ML system design: read + practice one design (area 4) |
+| Fri | One behavioral STAR story (area 6) → map to an Amazon LP |
+| Sat | Research deep-dive (area 5) + from-scratch implementation (areas 2–3) |
 
-The separate **project block** (Track 5, the deployed portfolio project) runs alongside on
-weekdays — that's build time, not review time.
+**Behavioral is parked through Aug 9** — Friday goes to experimentation catch-up until then.
+See the drill plan for why, and for the hard Sep 6 milestone that closes it out.
+
+The separate **project block** (the deployed portfolio project) runs alongside on weekdays —
+that's build time, not review time.
+
+> Renumbering note (2026-07-30): this file previously used the "Track 1–7" scheme from the
+> superseded [ml-job-prep-plan.md](ml-job-prep-plan.md). Mapping: Track 1 → area 1;
+> Track 2 → area 2 (classical ML, metrics, stats) and area 3 (deep learning); Track 3 → areas
+> 2–3; Track 4 and Track 5 → area 4; Track 6 → area 3; Track 7 → area 6. **Area 5
+> (research deep-dive) had no old equivalent** — it is the round AS loops run and MLE loops
+> don't, and it is the centerpiece for RS.
 
 ### The review checklist — what to know, and the bar for "known"
 
 The bar for every item: **you can explain it in 2–3 minutes and say when it breaks.** Check a
 box only when you've hit that bar out loud, not just read about it.
 
-**ML breadth (Track 2) — rapid-fire fundamentals**
+**ML breadth (area 2) — rapid-fire fundamentals**
 - [ ] Bias–variance tradeoff; over/underfitting; regularization (L1 vs L2, why L1 is sparse)
 - [ ] Logistic regression (loss, decision boundary), SVM (margin, kernels)
 - [ ] Trees → random forest vs gradient boosting (XGBoost/LightGBM): what each fixes
@@ -160,20 +172,26 @@ box only when you've hit that bar out loud, not just read about it.
 - [ ] Ranking metrics: NDCG, MAP, MRR — needed for search/recsys loops
 - [ ] Offline vs online metrics; why they disagree
 
-**Deep learning (Track 2)**
+**Deep learning (area 3)**
 - [ ] Backprop by hand on a tiny net; vanishing/exploding gradients
 - [ ] Initialization, batch norm vs layer norm, dropout — what problem each solves
 - [ ] CNNs (what a conv learns), RNN/LSTM (why LSTMs beat vanilla RNNs)
 - [ ] **Attention & transformers — cold.** Be able to derive scaled dot-product attention on
       a whiteboard and explain multi-head, positional encoding, Q/K/V.
 
-**Statistics, probability & A/B testing (Track 2)** — Amazon AS + quant love this
+**Statistics, probability & A/B testing (area 2)** — the AS differentiator; see the drill plan
 - [ ] MLE vs MAP; Bayes-rule word problems; common distributions
 - [ ] Hypothesis testing, p-values, confidence intervals — say what a p-value *isn't*
+- [ ] **"Failing to reject H₀ is not accepting H₀"** — you already reasoned this through on the
+      thesis benchmark; it is a classic interview trap and you can answer it from experience
 - [ ] A/B testing: experiment design, power analysis, sample size, novelty & network effects
+- [ ] Multiple comparisons and when to correct (and when correcting is the wrong call)
 - [ ] Causal inference: difference-in-differences, propensity scoring (your data-mining edge)
+- [ ] One- vs two-sided tests and why the choice matters; exact vs asymptotic tests; what breaks
+      when expected cell counts are small — **you implemented all of this from scratch**, so
+      rehearse it as *spoken answers*, not as code you can point at
 
-**ML system design (Track 4)** — decides your level
+**ML system design (area 4)** — decides your level
 - [ ] The framework, same order every time: **problem framing → data → features → model →
       training → serving → metrics → monitoring**
 - [ ] Serving vocabulary: latency budget, candidate generation vs ranking, feature store,
@@ -186,7 +204,7 @@ box only when you've hit that bar out loud, not just read about it.
   - [ ] A health design (readmission risk / triage) — your differentiator
   - [ ] An LLM-backed feature (RAG assistant) — increasingly asked in 2026
 
-**ML from scratch (Track 3)** — implement from a blank file, no framework
+**ML from scratch (areas 2–3)** — implement from a blank file, no framework
 - [ ] NumPy: linear regression (gradient descent), logistic regression, k-means, k-NN,
       a 2-layer NN with manual backprop
 - [ ] PyTorch: a training loop (no Lightning), a custom Dataset/DataLoader, single-head then
@@ -194,12 +212,23 @@ box only when you've hit that bar out loud, not just read about it.
 - [ ] Karpathy *Zero to Hero* videos 1, 2, and the GPT video (build nanoGPT along)
 - [ ] Debugging drill: given a training curve that won't converge, list 10 causes
 
-**LLM / GenAI literacy (Track 6)** — 2026 table stakes even for non-LLM roles
+**LLM / GenAI literacy (area 3)** — 2026 table stakes even for non-LLM roles
 - [ ] Pretraining vs SFT vs RLHF/DPO; LoRA/PEFT; quantization; context windows
 - [ ] RAG architecture; embeddings & vector search; eval (LLM-as-judge, benchmarks)
 - [ ] One hands-on artifact: a LoRA fine-tune on a toy task **or** a small RAG pipeline
 
-**Production / MLOps vocabulary (Track 5)**
+**Research deep-dive (area 5)** — the round AS loops run and MLE loops don't; the centerpiece for RS
+- [ ] The **Classify → Extract → Order → Verify** arc as one coherent line of work
+      (SMILE-College → TACO → CRAFT/MedTempo → MERMAID + the thesis benchmark)
+- [ ] Three lengths, each rehearsed aloud: **30 seconds**, **3 minutes**, **20 minutes**
+- [ ] For RS specifically: a **45-minute job talk** version with slides
+- [ ] Embedded answers for the predictable follow-ups: "what's next", "what's the hardest part",
+      "why this method over the baseline", "how does it all fit together"
+- [ ] Go deep on demand: CRAFT's generator–verifier loop and stopping criteria; MERMAID's claim
+      decomposition and memory-augmented reason–act loop; the benchmark's gold-label construction
+- [ ] A clean, non-defensive answer to the **venue question** and to the **May 2027 timeline**
+
+**Production / MLOps vocabulary (area 4 — serving & monitoring)**
 - [ ] The deployed portfolio project itself (FastAPI + Docker + AWS + W&B + CI)
 - [ ] Distributed training: data vs model vs pipeline parallelism; DDP; skim FSDP
 - [ ] PySpark basics (DataFrame API, joins, groupBy/agg, UDF pitfalls) — named in Amazon postings
