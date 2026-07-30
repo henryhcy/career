@@ -26,9 +26,11 @@ and keep the pipeline fed. Rule: log every role on the board the **same day** yo
 ## Filters to apply every time
 
 - **Location:** NYC-first (the roadmap targets), plus any remote/relocation you'd genuinely take.
-- **Sponsorship:** if you need visa sponsorship, confirm the company/posting supports it *before*
-  investing time.
-- **Level:** intern vs new-grad vs experienced — match the req to a Summer 2027 graduation.
+- **Sponsorship:** F-1 requiring H-1B — confirm the company/posting sponsors *before* investing
+  time. Board notes carry a sponsorship marker for exactly this reason; four Track A targets are
+  still unverified (Abridge, Komodo Health, Insitro, Scale AI).
+- **Level:** new-grad full-time, matched to a **May 2027** graduation. **Not intern** — that door
+  is closed by the May date (see job-search-strategy.md).
 
 ## The referral sweep (highest-leverage — done by Oct 1)
 

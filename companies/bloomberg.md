@@ -1,7 +1,7 @@
 # Bloomberg
 
-- **Role:** AI / ML Engineer
-- **Source / referral:** Target list (ML job prep plan)
+- **Role:** AI Engineer / Research (NYC)
+- **Source / referral:** target-roles.md — Tier 2 (Track B, fall 2026)
 - **Applied:**
 - **Status:** lead
 
@@ -11,6 +11,9 @@
 
 NYC-based with a strong ML/NLP org. Ranking metrics (NDCG/MAP/MRR) and search relevance are
 relevant; solid engineering culture.
+
+**AS-adjacent rather than AS** — the loop leans engineering, so treat this as the coding-heavy
+end of Track B and weight drill time accordingly.
 
 ## Comp
 

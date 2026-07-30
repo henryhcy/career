@@ -1,7 +1,7 @@
 # Google
 
-- **Role:** Machine Learning Engineer (NYC)
-- **Source / referral:** Target list (ML job prep plan)
+- **Role:** Applied Scientist / Research Scientist (Health AI)
+- **Source / referral:** target-roles.md — Tier 2 (Track B, fall 2026)
 - **Applied:**
 - **Status:** lead
 
@@ -9,8 +9,13 @@
 
 ## Why I want it
 
-Big-tech MLE in NYC. Strong on coding (Track 1) and system design (Track 4) — search and
-recommendation ranking.
+Health AI is the fit — clinical NLP and medical information extraction sit close to TACO and
+CRAFT. Retitled off the earlier MLE framing: the recsys/ranking angle was never the
+differentiator, and Applied Scientist is the track that reads the publication record as an
+asset rather than a curiosity.
+
+**Title varies by org** — "Research Scientist" in Google Research, "Applied Scientist" in Cloud
+and Ads. Confirm which one the target team posts under before applying.
 
 ## Comp
 
