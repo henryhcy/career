@@ -31,7 +31,16 @@ _Last updated: July 2026. Built around a May 2027 graduation and the two applica
 
 Applied Scientist / ML / NLP loops usually draw from these. Weight coding and system design more for Track B; weight research depth and domain framing more for Track A.
 
-**AS/RS weighting (set 2026-07-30).** The drill plan was originally three pillars — coding, system design, behavioral — which is the shape of an *MLE* loop. For an AS-primary search two things were added rather than swapped in: **experimentation & statistics** (area 2) and the **research deep-dive** (area 5, a round MLE loops don't run and the centerpiece for RS). Coding stays daily because it still gates the screen; system design stays 2×/week. **Behavioral is parked until Aug 10**, then runs weekly to a hard gate in Week 6 — finished *before* applications go out Sep 7. Week-by-week detail in [notes/interview-drills.md](notes/interview-drills.md).
+**AS/RS weighting (set 2026-07-30).** The drill plan was originally three pillars — coding, system design, behavioral — which is the shape of an *MLE* loop. For an AS-primary search two were added: **experimentation & statistics** (area 2) and the **research deep-dive** (area 5, a round MLE loops don't run and the centerpiece for RS).
+
+**Sequencing (set 2026-07-30):** hard technical before September, soft skills from September.
+
+- **Jul 27 – Sep 6 (Foundation)** — coding, ML breadth, experimentation & statistics, DL/NLP/LLM depth, ML system design, and the *technical depth* behind the research deep-dive. Six uninterrupted weeks with no loops competing; technical depth needs volume and repetition to move.
+- **Sep 7 onward (Big-Tech Wave)** — behavioral and STAR stories, the Amazon LP grid, pitch delivery, per-company "why them", and the timeline/venue answers. Narrative sharpens fastest against a real audience, and stories written in August get rewritten once you know which companies are live.
+- **One exception:** a 30-minute story *inventory* in Week 6 (list only, no drafting). Amazon's loop is LP-heavy and phone screens start around Sep 21, so September should not begin from a blank page.
+- **Gate:** all five STAR stories, the LP grid, and the timeline/venue answers done by **Sep 20**, before screens begin.
+
+Week-by-week detail in [notes/interview-drills.md](notes/interview-drills.md).
 
 ### 1. Coding / data structures and algorithms
 - Python, LeetCode medium as the working level.

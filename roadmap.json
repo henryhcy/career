@@ -52,16 +52,20 @@
               "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation"
             },
             {
-              "id": "fnd1-narr",
-              "text": "Narrative: lock the 30-sec intro + method-first arc (Classify -> Extract -> Order -> Verify)"
-            },
-            {
               "id": "fnd1-ops",
               "text": "Ops: resume/CV final; start referral lists for both tracks"
             },
             {
               "id": "fnd1-exp",
               "text": "Experimentation: hypothesis testing, p-values, CIs — be able to say what a p-value *isn't*"
+            },
+            {
+              "id": "fnd1-dl",
+              "text": "DL/LLM depth: transformer architecture, attention, positional encodings, tokenization — refresh cold"
+            },
+            {
+              "id": "fnd1-res",
+              "text": "Research depth: re-read your own CRAFT and TACO methods; list the follow-up questions you'd least want to be asked"
             }
           ]
         },
@@ -81,7 +85,7 @@
             },
             {
               "id": "fnd2-dl",
-              "text": "DL/LLM: transformer, attention, positional encodings, tokenization (refresh cold)"
+              "text": "DL/LLM depth: backprop by hand on a tiny net; vanishing/exploding gradients; initialization; batch vs layer norm; dropout"
             },
             {
               "id": "fnd2-exp",
@@ -89,7 +93,7 @@
             },
             {
               "id": "fnd2-res",
-              "text": "Research deep-dive: the 3-minute version of the arc; draft the \"hardest part\" answer"
+              "text": "Research depth: MERMAID — claim decomposition, memory-augmented reason-act loop, stopping criteria"
             }
           ]
         },
@@ -109,15 +113,15 @@
             },
             {
               "id": "fnd3-res",
-              "text": "Research deep-dive: MERMAID talking points (claim decomposition, memory-augmented reason-act, stopping criteria)"
-            },
-            {
-              "id": "fnd3-beh",
-              "text": "Behavioral: 2 research STAR stories; map stories to Amazon LPs"
+              "text": "Research depth: CRAFT's generator-verifier loop — why iterative refinement over one-shot, and where it fails"
             },
             {
               "id": "fnd3-exp",
               "text": "Experimentation: multiple comparisons and when correcting is the WRONG call; one- vs two-sided tests (straight from the thesis redesign)"
+            },
+            {
+              "id": "fnd3-dl",
+              "text": "DL/LLM depth: pretraining vs fine-tuning, PEFT/LoRA, RLHF (conceptual); decoding, hallucination/faithfulness"
             }
           ]
         },
@@ -137,11 +141,11 @@
             },
             {
               "id": "fnd4-dl",
-              "text": "DL/LLM: pretraining vs fine-tuning, PEFT/LoRA, RLHF (conceptual); decoding, hallucination/faithfulness"
+              "text": "DL/LLM depth: RAG internals — chunking, embeddings, vector search, reranking, failure modes"
             },
             {
               "id": "fnd4-res",
-              "text": "Research deep-dive: generator-verifier temporal framework (CRAFT)"
+              "text": "Research depth: the thesis benchmark — gold-label construction, leveled-order representation, why significance is the verdict"
             },
             {
               "id": "fnd4-exp",
@@ -161,7 +165,7 @@
             },
             {
               "id": "fnd5-llm",
-              "text": "LLM depth: RAG internals — chunking, embeddings, vector search, reranking, failure modes"
+              "text": "DL/LLM depth: multi-agent orchestration, tool use, verifier-guided generation and their failure modes"
             },
             {
               "id": "fnd5-sd",
@@ -174,6 +178,14 @@
             {
               "id": "fnd5-exp",
               "text": "Experimentation: exact vs asymptotic tests; what breaks when expected cell counts are small; power analysis. Rehearse your own significance suite ALOUD — it is worth nothing unsaid"
+            },
+            {
+              "id": "fnd5-scratch",
+              "text": "From scratch: NumPy (linreg, logreg, k-means, 2-layer NN w/ manual backprop); PyTorch (training loop, multi-head self-attention, transformer block)"
+            },
+            {
+              "id": "fnd5-res",
+              "text": "Research depth: the report->core dilution funnel — explain the negative result and the structural fix without defensiveness"
             }
           ]
         },
@@ -188,10 +200,6 @@
               "text": "Coding: 1-D DP; redo failed list; first timed mock (coding)"
             },
             {
-              "id": "fnd6-narr",
-              "text": "Narrative: research deep-dive end-to-end; 'why industry / why this team' answers"
-            },
-            {
               "id": "fnd6-ops",
               "text": "Ops: prep big-tech new-grad application materials; referral asks going out"
             },
@@ -200,13 +208,20 @@
               "text": "ML breadth + experimentation: rapid-fire self-quiz across both; fix weak spots"
             },
             {
-              "id": "fnd6-beh",
-              "text": "BEHAVIORAL GATE (before apps go out): LP grid done (2 stories per top-8 LP), all 5 STAR stories aloud <2 min, plus the May-2027 timeline and venue answers",
-              "milestone": true
+              "id": "fnd6-dl",
+              "text": "DL/LLM self-quiz + the debugging drill: a training curve that won't converge — list 10 causes"
+            },
+            {
+              "id": "fnd6-storyinv",
+              "text": "Behavioral (ONLY pre-Sep soft-skill task, ~30 min): LIST 6-8 candidate stories from the anchors in interview-prep.md. No drafting, no STAR shape, no LP mapping"
+            },
+            {
+              "id": "fnd6-res",
+              "text": "Research depth: full technical Q&A with a labmate who will push back. Content only — delivery polish comes in September"
             },
             {
               "id": "fnd6-ms",
-              "text": "Foundation done: coding fluent, narrative locked, referrals warm, materials ready",
+              "text": "Foundation done (technical): coding fluent, ML breadth + experimentation solid, 5 system designs done, research depth bulletproof, referrals warm, materials ready",
               "milestone": true
             }
           ]
@@ -225,17 +240,25 @@
           "end": "2026-09-13",
           "tasks": [
             {
-              "id": "btw1-ms",
-              "text": "Big-tech new-grad applications OUT (Amazon AS, Google, Meta, Microsoft/MSR, ByteDance, Scale AI, Samsung) — early + referral-backed",
-              "milestone": true
-            },
-            {
               "id": "btw1-code",
               "text": "Coding peak: 2-D DP (core), Greedy/Intervals"
             },
             {
-              "id": "btw1-beh",
-              "text": "Behavioral: Amazon LP stories memorized (2 per top LP)"
+              "id": "btw1-beh1",
+              "text": "Behavioral: draft STAR #1 (technical challenge — TACO/SYMPCODER) and STAR #2 (failure + what changed — the ~76% significance result and the structural redesign)"
+            },
+            {
+              "id": "btw1-pitch",
+              "text": "Pitch: write the 30-second intro and the 3-minute version of the Classify -> Extract -> Order -> Verify arc"
+            },
+            {
+              "id": "btw1-why",
+              "text": "Answers: 'why industry / why this team' — per-company, drafted into each companies/*.md"
+            },
+            {
+              "id": "btw1-ms",
+              "text": "Big-tech new-grad applications OUT (Amazon AS, Google, Meta, Microsoft/MSR, ByteDance, Scale AI, Samsung) — early + referral-backed",
+              "milestone": true
             }
           ]
         },
@@ -254,8 +277,21 @@
               "text": "System design 3x/week: recsys ranking, CTR prediction, fraud/anomaly"
             },
             {
+              "id": "btw2-beh2",
+              "text": "Behavioral: draft STAR #3 (ambiguity — the 30 -> 27 -> 24 roster churn), #4 (deadline crunch — CRAFT to SDM 2026), #5 (conflict). Build the LP grid, 2 stories per top-8 LP"
+            },
+            {
+              "id": "btw2-answers",
+              "text": "Draft the May-2027 timeline answer and the venue-question answer — clean and non-defensive"
+            },
+            {
               "id": "btw2-ms",
               "text": "Paper 3 -> arXiv (~Sep) so 'under review at [venue]' points to something openable",
+              "milestone": true
+            },
+            {
+              "id": "btw2-gate",
+              "text": "GATE before screens (~Sep 21): all 5 STAR stories aloud <2 min, LP grid complete, timeline + venue answers ready",
               "milestone": true
             }
           ]
@@ -358,17 +394,17 @@
           "end": "2026-12-20",
           "tasks": [
             {
-              "id": "brg1-ms",
-              "text": "Paper 4 -> arXiv as submittable (~Dec)",
-              "milestone": true
-            },
-            {
               "id": "brg1-code",
               "text": "Coding warm, lighter (~3/wk) so spring loops don't need a cold restart"
             },
             {
               "id": "brg1-trackA",
               "text": "Build Track A target list + warm referrals; continue any live Track B loops"
+            },
+            {
+              "id": "brg1-ms",
+              "text": "Paper 4 -> arXiv as submittable (~Dec)",
+              "milestone": true
             }
           ]
         },
@@ -422,13 +458,13 @@
           "end": "2027-02-28",
           "tasks": [
             {
+              "id": "sfw1-prep",
+              "text": "Domain-specific interview prep + research deep-dives; light coding"
+            },
+            {
               "id": "sfw1-ms",
               "text": "Track A applications OUT (spring window) — tailored why-company essays, cover letters, domain framing per Tier 1 company",
               "milestone": true
-            },
-            {
-              "id": "sfw1-prep",
-              "text": "Domain-specific interview prep + research deep-dives; light coding"
             }
           ]
         },
@@ -478,13 +514,13 @@
           "end": "2027-05-31",
           "tasks": [
             {
+              "id": "grad1-opt",
+              "text": "Confirm OPT start dates for a summer-2027 start with the international student office"
+            },
+            {
               "id": "grad1-ms",
               "text": "Final loops; negotiate; decide & accept; graduate",
               "milestone": true
-            },
-            {
-              "id": "grad1-opt",
-              "text": "Confirm OPT start dates for a summer-2027 start with the international student office"
             }
           ]
         }

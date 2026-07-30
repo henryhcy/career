@@ -135,17 +135,33 @@ depth. Area numbers refer to the six study areas in
 [../interview-prep-plan.md](../interview-prep-plan.md); the week-by-week version is
 [interview-drills.md](interview-drills.md).
 
+**Before September — hard technical only:**
+
 | Day | Study block focus |
 |---|---|
 | Mon | ML breadth topic (area 2) |
 | Tue | ML system design: read + practice one design out loud (area 4) |
 | Wed | Experimentation & statistics (area 2) |
 | Thu | ML system design: read + practice one design (area 4) |
-| Fri | One behavioral STAR story (area 6) → map to an Amazon LP |
-| Sat | Research deep-dive (area 5) + from-scratch implementation (areas 2–3) |
+| Fri | DL / NLP / LLM depth (area 3) |
+| Sat | Research deep-dive — technical depth (area 5) + from-scratch implementation (areas 2–3) |
 
-**Behavioral is parked through Aug 9** — Friday goes to experimentation catch-up until then.
-See the drill plan for why, and for the hard Sep 6 milestone that closes it out.
+**From September — soft skills enter, technical goes to maintenance:**
+
+| Day | Study block focus |
+|---|---|
+| Mon | Coding (company-tagged) + ML breadth maintenance |
+| Tue | ML system design (area 4) |
+| Wed | Behavioral: draft/refine a STAR story (area 6) |
+| Thu | ML system design (area 4) |
+| Fri | Behavioral: LP grid, per-company "why them", pitch delivery (areas 5–6) |
+| Sat | Mock, rotating |
+
+**Behavioral does not start until September** — the six Foundation weeks are uninterrupted time
+and go entirely to technical depth, which needs volume to move. Narrative sharpens faster against
+a real audience. One exception: a 30-minute story *inventory* in Week 6 so September doesn't start
+from a blank page. See [interview-drills.md](interview-drills.md) for the reasoning and the Sep 20
+gate that closes behavioral before phone screens begin.
 
 The separate **project block** (the deployed portfolio project) runs alongside on weekdays —
 that's build time, not review time.
