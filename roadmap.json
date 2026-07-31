@@ -40,10 +40,6 @@
           "end": "2026-08-09",
           "tasks": [
             {
-              "id": "fnd2-code",
-              "text": "Coding: Two Pointers set (carried from wk1), then Sliding Window, Stack"
-            },
-            {
               "id": "fnd2-ml",
               "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation (carried from wk1); then metrics — precision/recall/F1, ROC-AUC vs PR-AUC, calibration, class imbalance"
             },
@@ -70,6 +66,78 @@
             {
               "id": "fnd1-ops",
               "text": "Ops: resume/CV final; start referral lists for both tracks"
+            },
+            {
+              "id": "fnd2-tp125",
+              "text": "Coding · Two Pointers: 125 Valid Palindrome"
+            },
+            {
+              "id": "fnd2-tp167",
+              "text": "Coding · Two Pointers: 167 Two Sum II"
+            },
+            {
+              "id": "fnd2-tp15",
+              "text": "Coding · Two Pointers: 15 3Sum"
+            },
+            {
+              "id": "fnd2-tp11",
+              "text": "Coding · Two Pointers: 11 Container With Most Water"
+            },
+            {
+              "id": "fnd2-tp42",
+              "text": "Coding · Two Pointers: 42 Trapping Rain Water"
+            },
+            {
+              "id": "fnd2-sw121",
+              "text": "Coding · Sliding Window: 121 Best Time to Buy and Sell Stock"
+            },
+            {
+              "id": "fnd2-sw3",
+              "text": "Coding · Sliding Window: 3 Longest Substring Without Repeating Characters"
+            },
+            {
+              "id": "fnd2-sw424",
+              "text": "Coding · Sliding Window: 424 Longest Repeating Character Replacement"
+            },
+            {
+              "id": "fnd2-sw567",
+              "text": "Coding · Sliding Window: 567 Permutation in String"
+            },
+            {
+              "id": "fnd2-sw76",
+              "text": "Coding · Sliding Window: 76 Minimum Window Substring"
+            },
+            {
+              "id": "fnd2-sw239",
+              "text": "Coding · Sliding Window: 239 Sliding Window Maximum"
+            },
+            {
+              "id": "fnd2-st20",
+              "text": "Coding · Stack: 20 Valid Parentheses"
+            },
+            {
+              "id": "fnd2-st155",
+              "text": "Coding · Stack: 155 Min Stack"
+            },
+            {
+              "id": "fnd2-st150",
+              "text": "Coding · Stack: 150 Evaluate Reverse Polish Notation"
+            },
+            {
+              "id": "fnd2-st22",
+              "text": "Coding · Stack: 22 Generate Parentheses"
+            },
+            {
+              "id": "fnd2-st739",
+              "text": "Coding · Stack: 739 Daily Temperatures"
+            },
+            {
+              "id": "fnd2-st853",
+              "text": "Coding · Stack: 853 Car Fleet"
+            },
+            {
+              "id": "fnd2-st84",
+              "text": "Coding · Stack: 84 Largest Rectangle in Histogram"
             }
           ]
         },
@@ -79,10 +147,6 @@
           "start": "2026-08-10",
           "end": "2026-08-16",
           "tasks": [
-            {
-              "id": "fnd3-code",
-              "text": "Coding: Binary Search, Linked List"
-            },
             {
               "id": "fnd3-ml",
               "text": "ML breadth: logistic regression, trees/GBMs, k-means, basic Bayesian (ties to Gulf War clustering)"
@@ -98,6 +162,78 @@
             {
               "id": "fnd3-dl",
               "text": "DL/LLM depth: pretraining vs fine-tuning, PEFT/LoRA, RLHF (conceptual); decoding, hallucination/faithfulness"
+            },
+            {
+              "id": "fnd3-bs704",
+              "text": "Coding · Binary Search: 704 Binary Search"
+            },
+            {
+              "id": "fnd3-bs74",
+              "text": "Coding · Binary Search: 74 Search a 2D Matrix"
+            },
+            {
+              "id": "fnd3-bs875",
+              "text": "Coding · Binary Search: 875 Koko Eating Bananas"
+            },
+            {
+              "id": "fnd3-bs153",
+              "text": "Coding · Binary Search: 153 Find Minimum in Rotated Sorted Array"
+            },
+            {
+              "id": "fnd3-bs33",
+              "text": "Coding · Binary Search: 33 Search in Rotated Sorted Array"
+            },
+            {
+              "id": "fnd3-bs981",
+              "text": "Coding · Binary Search: 981 Time Based Key-Value Store"
+            },
+            {
+              "id": "fnd3-bs4",
+              "text": "Coding · Binary Search: 4 Median of Two Sorted Arrays"
+            },
+            {
+              "id": "fnd3-ll206",
+              "text": "Coding · Linked List: 206 Reverse Linked List"
+            },
+            {
+              "id": "fnd3-ll21",
+              "text": "Coding · Linked List: 21 Merge Two Sorted Lists"
+            },
+            {
+              "id": "fnd3-ll143",
+              "text": "Coding · Linked List: 143 Reorder List"
+            },
+            {
+              "id": "fnd3-ll19",
+              "text": "Coding · Linked List: 19 Remove Nth Node From End of List"
+            },
+            {
+              "id": "fnd3-ll138",
+              "text": "Coding · Linked List: 138 Copy List with Random Pointer"
+            },
+            {
+              "id": "fnd3-ll2",
+              "text": "Coding · Linked List: 2 Add Two Numbers"
+            },
+            {
+              "id": "fnd3-ll141",
+              "text": "Coding · Linked List: 141 Linked List Cycle"
+            },
+            {
+              "id": "fnd3-ll287",
+              "text": "Coding · Linked List: 287 Find the Duplicate Number"
+            },
+            {
+              "id": "fnd3-ll146",
+              "text": "Coding · Linked List: 146 LRU Cache"
+            },
+            {
+              "id": "fnd3-ll23",
+              "text": "Coding · Linked List: 23 Merge k Sorted Lists"
+            },
+            {
+              "id": "fnd3-ll25",
+              "text": "Coding · Linked List: 25 Reverse Nodes in k-Group"
             }
           ]
         },
@@ -107,10 +243,6 @@
           "start": "2026-08-17",
           "end": "2026-08-23",
           "tasks": [
-            {
-              "id": "fnd4-code",
-              "text": "Coding: Trees, Graphs (BFS/DFS)"
-            },
             {
               "id": "fnd4-sd",
               "text": "System design: RAG system; clinical entity-extraction pipeline (OCR -> NER -> post-processing, from HALO)"
@@ -126,6 +258,66 @@
             {
               "id": "fnd4-exp",
               "text": "Experimentation: causal inference — difference-in-differences, propensity scoring"
+            },
+            {
+              "id": "fnd4-tr226",
+              "text": "Coding · Trees: 226 Invert Binary Tree"
+            },
+            {
+              "id": "fnd4-tr104",
+              "text": "Coding · Trees: 104 Maximum Depth of Binary Tree"
+            },
+            {
+              "id": "fnd4-tr543",
+              "text": "Coding · Trees: 543 Diameter of Binary Tree"
+            },
+            {
+              "id": "fnd4-tr110",
+              "text": "Coding · Trees: 110 Balanced Binary Tree"
+            },
+            {
+              "id": "fnd4-tr100",
+              "text": "Coding · Trees: 100 Same Tree"
+            },
+            {
+              "id": "fnd4-tr572",
+              "text": "Coding · Trees: 572 Subtree of Another Tree"
+            },
+            {
+              "id": "fnd4-tr235",
+              "text": "Coding · Trees: 235 Lowest Common Ancestor of a BST"
+            },
+            {
+              "id": "fnd4-tr102",
+              "text": "Coding · Trees: 102 Binary Tree Level Order Traversal"
+            },
+            {
+              "id": "fnd4-tr199",
+              "text": "Coding · Trees: 199 Binary Tree Right Side View"
+            },
+            {
+              "id": "fnd4-tr1448",
+              "text": "Coding · Trees: 1448 Count Good Nodes in Binary Tree"
+            },
+            {
+              "id": "fnd4-tr98",
+              "text": "Coding · Trees: 98 Validate Binary Search Tree"
+            },
+            {
+              "id": "fnd4-tr230",
+              "text": "Coding · Trees: 230 Kth Smallest Element in a BST"
+            },
+            {
+              "id": "fnd4-tr105",
+              "text": "Coding · Trees: 105 Construct Binary Tree from Preorder and Inorder Traversal"
+            },
+            {
+              "id": "fnd4-tr124",
+              "text": "Coding · Trees: 124 Binary Tree Maximum Path Sum"
+            },
+            {
+              "id": "fnd4-tr297",
+              "text": "Coding · Trees: 297 Serialize and Deserialize Binary Tree"
             }
           ]
         },
@@ -137,7 +329,7 @@
           "tasks": [
             {
               "id": "fnd5-code",
-              "text": "Coding: Heaps, intro 1-D DP; ML-flavored coding (implement k-means, a metric, small training loop, tokenization)"
+              "text": "Coding: ML-flavored — implement k-means, a precision/recall metric, tokenization from a blank file"
             },
             {
               "id": "fnd5-llm",
@@ -162,6 +354,70 @@
             {
               "id": "fnd5-res",
               "text": "Research depth: the report->core dilution funnel — explain the negative result and the structural fix without defensiveness"
+            },
+            {
+              "id": "fnd5-hp703",
+              "text": "Coding · Heap / Priority Queue: 703 Kth Largest Element in a Stream"
+            },
+            {
+              "id": "fnd5-hp1046",
+              "text": "Coding · Heap / Priority Queue: 1046 Last Stone Weight"
+            },
+            {
+              "id": "fnd5-hp973",
+              "text": "Coding · Heap / Priority Queue: 973 K Closest Points to Origin"
+            },
+            {
+              "id": "fnd5-hp215",
+              "text": "Coding · Heap / Priority Queue: 215 Kth Largest Element in an Array"
+            },
+            {
+              "id": "fnd5-hp621",
+              "text": "Coding · Heap / Priority Queue: 621 Task Scheduler"
+            },
+            {
+              "id": "fnd5-hp355",
+              "text": "Coding · Heap / Priority Queue: 355 Design Twitter"
+            },
+            {
+              "id": "fnd5-hp295",
+              "text": "Coding · Heap / Priority Queue: 295 Find Median from Data Stream"
+            },
+            {
+              "id": "fnd5-bt78",
+              "text": "Coding · Backtracking: 78 Subsets"
+            },
+            {
+              "id": "fnd5-bt39",
+              "text": "Coding · Backtracking: 39 Combination Sum"
+            },
+            {
+              "id": "fnd5-bt46",
+              "text": "Coding · Backtracking: 46 Permutations"
+            },
+            {
+              "id": "fnd5-bt90",
+              "text": "Coding · Backtracking: 90 Subsets II"
+            },
+            {
+              "id": "fnd5-bt40",
+              "text": "Coding · Backtracking: 40 Combination Sum II"
+            },
+            {
+              "id": "fnd5-bt79",
+              "text": "Coding · Backtracking: 79 Word Search"
+            },
+            {
+              "id": "fnd5-bt131",
+              "text": "Coding · Backtracking: 131 Palindrome Partitioning"
+            },
+            {
+              "id": "fnd5-bt17",
+              "text": "Coding · Backtracking: 17 Letter Combinations of a Phone Number"
+            },
+            {
+              "id": "fnd5-bt51",
+              "text": "Coding · Backtracking: 51 N-Queens"
             }
           ]
         },
@@ -173,7 +429,7 @@
           "tasks": [
             {
               "id": "fnd6-code",
-              "text": "Coding: 1-D DP; redo failed list; first timed mock (coding)"
+              "text": "Coding: redo the failed list; FIRST TIMED MOCK — 2 problems, 45 min, talking aloud"
             },
             {
               "id": "fnd6-ops",
@@ -196,6 +452,58 @@
               "text": "Research depth: full technical Q&A with a labmate who will push back. Content only — delivery polish comes in September"
             },
             {
+              "id": "fnd6-gr200",
+              "text": "Coding · Graphs: 200 Number of Islands"
+            },
+            {
+              "id": "fnd6-gr133",
+              "text": "Coding · Graphs: 133 Clone Graph"
+            },
+            {
+              "id": "fnd6-gr695",
+              "text": "Coding · Graphs: 695 Max Area of Island"
+            },
+            {
+              "id": "fnd6-gr417",
+              "text": "Coding · Graphs: 417 Pacific Atlantic Water Flow"
+            },
+            {
+              "id": "fnd6-gr130",
+              "text": "Coding · Graphs: 130 Surrounded Regions"
+            },
+            {
+              "id": "fnd6-gr994",
+              "text": "Coding · Graphs: 994 Rotting Oranges"
+            },
+            {
+              "id": "fnd6-gr286",
+              "text": "Coding · Graphs: 286 Walls and Gates"
+            },
+            {
+              "id": "fnd6-gr207",
+              "text": "Coding · Graphs: 207 Course Schedule"
+            },
+            {
+              "id": "fnd6-gr210",
+              "text": "Coding · Graphs: 210 Course Schedule II"
+            },
+            {
+              "id": "fnd6-gr684",
+              "text": "Coding · Graphs: 684 Redundant Connection"
+            },
+            {
+              "id": "fnd6-gr323",
+              "text": "Coding · Graphs: 323 Number of Connected Components"
+            },
+            {
+              "id": "fnd6-gr261",
+              "text": "Coding · Graphs: 261 Graph Valid Tree"
+            },
+            {
+              "id": "fnd6-gr127",
+              "text": "Coding · Graphs: 127 Word Ladder"
+            },
+            {
               "id": "fnd6-ms",
               "text": "Foundation done (technical): coding fluent, ML breadth + experimentation solid, 5 system designs done, research depth bulletproof, referrals warm, materials ready",
               "milestone": true
@@ -216,10 +524,6 @@
           "end": "2026-09-13",
           "tasks": [
             {
-              "id": "btw1-code",
-              "text": "Coding peak: 2-D DP (core), Greedy/Intervals"
-            },
-            {
               "id": "btw1-beh1",
               "text": "Behavioral: draft STAR #1 (technical challenge — TACO/SYMPCODER) and STAR #2 (failure + what changed — the ~76% significance result and the structural redesign)"
             },
@@ -230,6 +534,54 @@
             {
               "id": "btw1-why",
               "text": "Answers: 'why industry / why this team' — per-company, drafted into each companies/*.md"
+            },
+            {
+              "id": "btw1-dp70",
+              "text": "Coding · 1-D DP: 70 Climbing Stairs"
+            },
+            {
+              "id": "btw1-dp746",
+              "text": "Coding · 1-D DP: 746 Min Cost Climbing Stairs"
+            },
+            {
+              "id": "btw1-dp198",
+              "text": "Coding · 1-D DP: 198 House Robber"
+            },
+            {
+              "id": "btw1-dp213",
+              "text": "Coding · 1-D DP: 213 House Robber II"
+            },
+            {
+              "id": "btw1-dp5",
+              "text": "Coding · 1-D DP: 5 Longest Palindromic Substring"
+            },
+            {
+              "id": "btw1-dp647",
+              "text": "Coding · 1-D DP: 647 Palindromic Substrings"
+            },
+            {
+              "id": "btw1-dp91",
+              "text": "Coding · 1-D DP: 91 Decode Ways"
+            },
+            {
+              "id": "btw1-dp322",
+              "text": "Coding · 1-D DP: 322 Coin Change"
+            },
+            {
+              "id": "btw1-dp152",
+              "text": "Coding · 1-D DP: 152 Maximum Product Subarray"
+            },
+            {
+              "id": "btw1-dp139",
+              "text": "Coding · 1-D DP: 139 Word Break"
+            },
+            {
+              "id": "btw1-dp300",
+              "text": "Coding · 1-D DP: 300 Longest Increasing Subsequence"
+            },
+            {
+              "id": "btw1-dp416",
+              "text": "Coding · 1-D DP: 416 Partition Equal Subset Sum"
             },
             {
               "id": "btw1-ms",
@@ -246,7 +598,7 @@
           "tasks": [
             {
               "id": "btw2-code",
-              "text": "Coding: company-tagged (LeetCode Premium, frequency-sorted) for imminent loops; redo failed"
+              "text": "Coding: LeetCode Premium company-tagged + frequency-sorted for imminent loops; heavy redo of fails"
             },
             {
               "id": "btw2-sd",
@@ -259,6 +611,70 @@
             {
               "id": "btw2-answers",
               "text": "Draft the May-2027 timeline answer and the venue-question answer — clean and non-defensive"
+            },
+            {
+              "id": "btw2-d262",
+              "text": "Coding · 2-D DP: 62 Unique Paths"
+            },
+            {
+              "id": "btw2-d21143",
+              "text": "Coding · 2-D DP: 1143 Longest Common Subsequence"
+            },
+            {
+              "id": "btw2-d2309",
+              "text": "Coding · 2-D DP: 309 Best Time to Buy and Sell Stock with Cooldown"
+            },
+            {
+              "id": "btw2-d2518",
+              "text": "Coding · 2-D DP: 518 Coin Change II"
+            },
+            {
+              "id": "btw2-d2494",
+              "text": "Coding · 2-D DP: 494 Target Sum"
+            },
+            {
+              "id": "btw2-d297",
+              "text": "Coding · 2-D DP: 97 Interleaving String"
+            },
+            {
+              "id": "btw2-gi53",
+              "text": "Coding · Greedy + Intervals: 53 Maximum Subarray"
+            },
+            {
+              "id": "btw2-gi55",
+              "text": "Coding · Greedy + Intervals: 55 Jump Game"
+            },
+            {
+              "id": "btw2-gi45",
+              "text": "Coding · Greedy + Intervals: 45 Jump Game II"
+            },
+            {
+              "id": "btw2-gi134",
+              "text": "Coding · Greedy + Intervals: 134 Gas Station"
+            },
+            {
+              "id": "btw2-gi763",
+              "text": "Coding · Greedy + Intervals: 763 Partition Labels"
+            },
+            {
+              "id": "btw2-gi57",
+              "text": "Coding · Greedy + Intervals: 57 Insert Interval"
+            },
+            {
+              "id": "btw2-gi56",
+              "text": "Coding · Greedy + Intervals: 56 Merge Intervals"
+            },
+            {
+              "id": "btw2-gi435",
+              "text": "Coding · Greedy + Intervals: 435 Non-overlapping Intervals"
+            },
+            {
+              "id": "btw2-gi252",
+              "text": "Coding · Greedy + Intervals: 252 Meeting Rooms"
+            },
+            {
+              "id": "btw2-gi253",
+              "text": "Coding · Greedy + Intervals: 253 Meeting Rooms II"
             },
             {
               "id": "btw2-ms",
