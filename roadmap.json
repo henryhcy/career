@@ -13,59 +13,23 @@
           "tasks": [
             {
               "id": "fnd1-ah242",
-              "text": "Coding · Arrays & Hashing: 242 Valid Anagram (today)"
+              "text": "Coding · Arrays & Hashing: 242 Valid Anagram"
             },
             {
               "id": "fnd1-ah347",
-              "text": "Coding · Arrays & Hashing: 347 Top K Frequent (today)"
+              "text": "Coding · Arrays & Hashing: 347 Top K Frequent"
             },
             {
               "id": "fnd1-ah128",
-              "text": "Coding · Arrays & Hashing: 128 Longest Consecutive (today)"
-            },
-            {
-              "id": "fnd1-ah49",
-              "text": "Coding · Arrays & Hashing: 49 Group Anagrams"
-            },
-            {
-              "id": "fnd1-ah238",
-              "text": "Coding · Arrays & Hashing: 238 Product of Array Except Self"
-            },
-            {
-              "id": "fnd1-ah271",
-              "text": "Coding · Arrays & Hashing: 271 Encode & Decode Strings"
-            },
-            {
-              "id": "fnd1-ah36",
-              "text": "Coding · Arrays & Hashing: 36 Valid Sudoku"
-            },
-            {
-              "id": "fnd1-ah2p",
-              "text": "Coding · Two Pointers set — once Arrays & Hashing feels comfortable"
+              "text": "Coding · Arrays & Hashing: 128 Longest Consecutive"
             },
             {
               "id": "fnd1-complexity",
               "text": "Complexity basics: Big-O; costs of common ops (sort, dict/set/list/heap); why sorting is n log n; amortized + space (see study-guide.md)"
             },
             {
-              "id": "fnd1-ml",
-              "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation"
-            },
-            {
-              "id": "fnd1-ops",
-              "text": "Ops: resume/CV final; start referral lists for both tracks"
-            },
-            {
               "id": "fnd1-exp",
               "text": "Experimentation: hypothesis testing, p-values, CIs — be able to say what a p-value *isn't*"
-            },
-            {
-              "id": "fnd1-dl",
-              "text": "DL/LLM depth: transformer architecture, attention, positional encodings, tokenization — refresh cold"
-            },
-            {
-              "id": "fnd1-res",
-              "text": "Research depth: re-read your own CRAFT and TACO methods; list the follow-up questions you'd least want to be asked"
             }
           ]
         },
@@ -77,15 +41,15 @@
           "tasks": [
             {
               "id": "fnd2-code",
-              "text": "Coding: Sliding Window, Stack"
+              "text": "Coding: Two Pointers set (carried from wk1), then Sliding Window, Stack"
             },
             {
               "id": "fnd2-ml",
-              "text": "ML breadth: metrics — precision/recall/F1, ROC-AUC vs PR-AUC, calibration, class imbalance"
+              "text": "ML breadth: bias-variance, regularization, over/underfitting, cross-validation (carried from wk1); then metrics — precision/recall/F1, ROC-AUC vs PR-AUC, calibration, class imbalance"
             },
             {
               "id": "fnd2-dl",
-              "text": "DL/LLM depth: backprop by hand on a tiny net; vanishing/exploding gradients; initialization; batch vs layer norm; dropout"
+              "text": "DL/LLM depth: transformer architecture, attention, positional encodings, tokenization — refresh cold (carried from wk1); then backprop by hand, vanishing/exploding gradients, init, batch vs layer norm"
             },
             {
               "id": "fnd2-exp",
@@ -93,7 +57,19 @@
             },
             {
               "id": "fnd2-res",
-              "text": "Research depth: MERMAID — claim decomposition, memory-augmented reason-act loop, stopping criteria"
+              "text": "Research depth: re-read your own CRAFT and TACO methods and list the follow-ups you'd least want asked (carried from wk1); then MERMAID — claim decomposition, memory-augmented reason-act loop, stopping criteria"
+            },
+            {
+              "id": "fnd1-ah49",
+              "text": "Coding · Arrays & Hashing: 49 Group Anagrams"
+            },
+            {
+              "id": "fnd1-ah238",
+              "text": "Coding · Arrays & Hashing: 238 Product of Array Except Self"
+            },
+            {
+              "id": "fnd1-ops",
+              "text": "Ops: resume/CV final; start referral lists for both tracks"
             }
           ]
         },

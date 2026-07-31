@@ -108,10 +108,21 @@ protect **coding** and **experimentation**; those two compound.
 - **Research depth:** re-read your own CRAFT and TACO methods; list the follow-up questions you'd
   least want to be asked.
 
-### Week 2 · Aug 3 – 9
-- **Coding:** Sliding Window (~6), Stack (~7). Redo Week-1 fails.
-- **ML breadth:** bias–variance, regularization (L1 vs L2, why L1 is sparse), logreg, SVM,
-  trees → RF vs GBM.
+### Week 2 · Aug 3 – 9 · absorbs the Week 1 carry-over
+> Week 1 closed 5/14. Carried forward: **49 Group Anagrams**, **238 Product of Array Except
+> Self**, the **Two Pointers** set, **bias-variance/regularization/CV**, **transformers cold**,
+> **re-read your own methods**, and the **ops task** (resume/CV final + referral lists).
+> **Retired:** 271 Encode & Decode Strings (Premium-gated, low frequency) and 36 Valid Sudoku
+> (high tedium, low interview signal) — recoverable from git history if you want them back.
+>
+> This makes Week 2 the heaviest of Foundation at 8 tasks. If it slips again, cut coding volume
+> before cutting a pillar — one fewer problem costs less than a skipped experimentation block.
+
+- **Coding:** carry-over first — **Two Pointers set**, plus **49** and **238**. Then Sliding
+  Window (~6), Stack (~7). Redo Week-1 fails.
+- **ML breadth:** bias–variance, regularization (L1 vs L2, why L1 is sparse), cross-validation,
+  over/underfitting — *then* metrics, logreg, SVM, trees → RF vs GBM.
+- **Ops:** resume/CV final; start referral lists for both tracks.
 - **Experimentation:** A/B testing — design, power analysis, sample size, novelty and network
   effects. **"Failing to reject H₀ ≠ accepting H₀"** — you have lived this; make it fluent.
 - **DL depth:** backprop by hand on a tiny net; vanishing/exploding gradients; init; batch vs layer norm.
