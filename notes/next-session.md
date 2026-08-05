@@ -2,6 +2,26 @@
 
 Picking back up on the Windows machine. Start with `./bin/bootstrap`, then `./bin/board`.
 
+## Where you left off (2026-08-05, Wed — week `fnd2`, day 3 of 7)
+
+Closed **238 Product of Array Except Self** (the last Week-1 coding carry-over) and
+**125 Valid Palindrome** (first of the Two Pointers set). Week `fnd2` now stands at **3/25**.
+
+Pick up here:
+
+- **`fnd2-exp` — experimentation, started but not done.** Wednesday's study block per the
+  [drill cadence](interview-drills.md). Ran as a spoken-answer drill; first question was on the
+  table and unanswered: *design the A/B test for a clinical note-summarization model — unit of
+  randomization, primary metric, run length.* Then power analysis, sample size, novelty and
+  network effects, and making **"failing to reject H₀ ≠ accepting H₀"** fluent.
+- **Coding is blocked on missing infrastructure.** Solutions belong in an `ml-job-prep` repo
+  (see "Where the code lives" below); that repo still does not exist. Create it before the next
+  coding session.
+- **`fnd2` is over-committed.** 17 of the 20 coding problems remain against 4 days left and a
+  one-problem-a-day habit. [interview-drills.md](interview-drills.md) already calls this the
+  heaviest week of Foundation and says to **cut coding volume before cutting a pillar**. Decide
+  at the board rather than letting it roll a second time.
+
 ## Strategy pivot to May 2027 (added 2026-07-29)
 
 Locked a **May 2027 graduation** and a **two-wave** plan: big-tech new-grad in fall 2026
@@ -21,8 +41,9 @@ Done in response:
   + system design + behavioral (Jul 27 – Sep 20), the granular layer under `roadmap.json`.
 
 Still to reconcile / decide:
-- **Board leads are the OLD target list** (Amazon/Google/Meta/Bloomberg/TikTok/quant/health-AI).
-  Refresh with `target-roles.md` Tier 1 (health-tech / clinical-NLP) when ready.
+- ~~Board leads are the OLD target list.~~ **Done** (commit `237956e`) — the board now carries 21
+  Applied-Scientist-framed leads built from `target-roles.md`, health-tech / clinical-NLP included
+  (Abridge, Komodo, Insitro, Optum, Pfizer, Novartis, Genentech, AI2, Oracle Health, MSR Health Futures).
 - Everything under "ML job prep plan is now live" below predates the pivot — treat as history.
 
 ## ML job prep plan is now live (added 2026-07-16)
@@ -42,9 +63,8 @@ interviewing). Both `board/app.js` and `board/render.py` carry a comment on how 
 
 Next actions:
 
-- [ ] **Concretize the two placeholder leads** — `quant-firms` and `health-ai-nyc` are
-  category placeholders; pick 2–3 real firms each (candidates listed in their card notes)
-  and split them into real cards.
+- [x] **Concretize the two placeholder leads** — done; `quant-firms` and `health-ai-nyc` are gone
+  from `applications.json`, replaced by named companies in the 21-lead rebuild.
 - [ ] **Foundation phase (now, per `roadmap.json`)** — rebuild coding fluency, refresh ML
   breadth, lock the method-first narrative, warm referrals for both tracks. (The old "Jul 26
   internship apps" milestone is void — internship path closed by the May 2027 date.)
