@@ -2,6 +2,27 @@
 
 Picking back up on the Windows machine. Start with `./bin/bootstrap`, then `./bin/board`.
 
+## Foundation reweighting (2026-08-06) — don't re-litigate
+
+Rewrote fnd3–fnd6 in `roadmap.json` (the source of truth). Decisions + rationale:
+
+1. **August is coding-heavy; coding is the protected pillar** — nothing displaces it (~2/day, treated as
+   one continuous pattern-ordered queue).
+2. **Two study pillars run all August: ML breadth + DL/NLP/LLM depth.** Nothing else standing.
+3. **System design phases in at fnd4 (Aug 17)** and ramps 1 → 2 designs/week (fnd4 #1 RAG; fnd5 #2–3;
+   fnd6 #4–5) — coding gets three weeks of fluency first. This also **fixed a drills/roadmap
+   inconsistency**: SD now lives in fnd4–fnd6 in both docs.
+4. **Experimentation demoted off August entirely** → one low-priority **rehearsal** in September
+   (`btw2-exp-rehearsal`), "first to cut." Rehearsal of the exact-inference suite, not learning (~30 min).
+- **Research-depth technical prep moved out of August** into the **September research-DELIVERY** focus
+  (presenting your own projects/publications — the September headline alongside behavioral/LP).
+- **`done` map preserved** — no completed tasks orphaned. Removed ids (`fnd2-exp`, `fnd3/4/5-exp`,
+  `fnd3/4/5/6-res`) and the rename `fnd6-exp → fnd6-ml` were all not-done.
+- **fnd2 left as-is except `fnd2-exp` removed**; its remaining coding **carries** (continuous queue),
+  not redistributed.
+- Applied to `roadmap.json`, `notes/interview-drills.md`, `interview-prep-plan.md`. **No `./bin/render`**
+  (renderer reads only `applications.json`); **CLAUDE.md unchanged** (no setup change).
+
 ## Where you left off (2026-08-05, Wed — week `fnd2`, day 3 of 7)
 
 Closed **238 Product of Array Except Self** (the last Week-1 coding carry-over) and

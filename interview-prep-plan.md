@@ -35,10 +35,12 @@ Applied Scientist / ML / NLP loops usually draw from these. Weight coding and sy
 
 **Sequencing (set 2026-07-30):** hard technical before September, soft skills from September.
 
-- **Jul 27 – Sep 6 (Foundation)** — coding, ML breadth, experimentation & statistics, DL/NLP/LLM depth, ML system design, and the *technical depth* behind the research deep-dive. Six uninterrupted weeks with no loops competing; technical depth needs volume and repetition to move.
-- **Sep 7 onward (Big-Tech Wave)** — behavioral and STAR stories, the Amazon LP grid, pitch delivery, per-company "why them", and the timeline/venue answers. Narrative sharpens fastest against a real audience, and stories written in August get rewritten once you know which companies are live.
+- **Jul 27 – Sep 6 (Foundation)** — coding (protected, coding-heavy) plus **two study pillars all month, ML breadth and DL/NLP/LLM depth**; **ML system design phases in mid-August** (week 4, Aug 17) and ramps. Experimentation and the research *technical* deep-dive are **not** August pillars (see the reweighting below).
+- **Sep 7 onward (Big-Tech Wave)** — **research-deep-dive delivery is the headline** (presenting your own projects/publications: the 30s/3min/20min versions, per-company tailoring, follow-up questions), alongside behavioral and STAR stories, the Amazon LP grid, pitch delivery, per-company "why them", and the timeline/venue answers. Narrative and research delivery sharpen fastest against a real audience; stories written in August get rewritten once you know which companies are live.
 - **One exception:** a 30-minute story *inventory* in Week 6 (list only, no drafting). Amazon's loop is LP-heavy and phone screens start around Sep 21, so September should not begin from a blank page.
 - **Gate:** all five STAR stories, the LP grid, and the timeline/venue answers done by **Sep 20**, before screens begin.
+
+**Reweighting (set 2026-08-06):** August is coding-heavy and protected; the only standing study pillars are **ML breadth** and **DL/NLP/LLM depth**; **system design ramps in from week 4**; **experimentation is demoted** to a single queued September rehearsal (lowest priority, first to cut); and the **research deep-dive moves entirely to September as delivery**. Week-by-week detail in [notes/interview-drills.md](notes/interview-drills.md).
 
 Week-by-week detail in [notes/interview-drills.md](notes/interview-drills.md).
 

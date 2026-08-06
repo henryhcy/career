@@ -48,10 +48,6 @@
               "text": "DL/LLM depth: transformer architecture, attention, positional encodings, tokenization — refresh cold (carried from wk1); then backprop by hand, vanishing/exploding gradients, init, batch vs layer norm"
             },
             {
-              "id": "fnd2-exp",
-              "text": "Experimentation: A/B testing — design, power analysis, sample size, novelty & network effects. Rehearse \"failing to reject H0 != accepting H0\" (you lived this on the benchmark)"
-            },
-            {
               "id": "fnd2-res",
               "text": "Research depth: re-read your own CRAFT and TACO methods and list the follow-ups you'd least want asked (carried from wk1); then MERMAID — claim decomposition, memory-augmented reason-act loop, stopping criteria"
             },
@@ -152,14 +148,6 @@
               "text": "ML breadth: logistic regression, trees/GBMs, k-means, basic Bayesian (ties to Gulf War clustering)"
             },
             {
-              "id": "fnd3-res",
-              "text": "Research depth: CRAFT's generator-verifier loop — why iterative refinement over one-shot, and where it fails"
-            },
-            {
-              "id": "fnd3-exp",
-              "text": "Experimentation: multiple comparisons and when correcting is the WRONG call; one- vs two-sided tests (straight from the thesis redesign)"
-            },
-            {
               "id": "fnd3-dl",
               "text": "DL/LLM depth: pretraining vs fine-tuning, PEFT/LoRA, RLHF (conceptual); decoding, hallucination/faithfulness"
             },
@@ -244,20 +232,16 @@
           "end": "2026-08-23",
           "tasks": [
             {
+              "id": "fnd4-ml",
+              "text": "ML breadth: ranking metrics (NDCG/MAP/MRR); calibration; attention derived on a whiteboard"
+            },
+            {
               "id": "fnd4-sd",
-              "text": "System design: RAG system; clinical entity-extraction pipeline (OCR -> NER -> post-processing, from HALO)"
+              "text": "System design (begins — ramps as coding fluency improves): learn the 8-step framework, then Design #1 — RAG system (retrieval -> rerank -> generate; chunking/embeddings; latency; eval)"
             },
             {
               "id": "fnd4-dl",
               "text": "DL/LLM depth: RAG internals — chunking, embeddings, vector search, reranking, failure modes"
-            },
-            {
-              "id": "fnd4-res",
-              "text": "Research depth: the thesis benchmark — gold-label construction, leveled-order representation, why significance is the verdict"
-            },
-            {
-              "id": "fnd4-exp",
-              "text": "Experimentation: causal inference — difference-in-differences, propensity scoring"
             },
             {
               "id": "fnd4-tr226",
@@ -337,23 +321,15 @@
             },
             {
               "id": "fnd5-sd",
-              "text": "System design: LLM evaluation harness; multi-agent verification loop"
+              "text": "System design (ramp): Design #2 — clinical entity-extraction pipeline (OCR -> NER -> post-processing, from HALO); Design #3 — LLM evaluation harness (offline vs online; LLM-as-judge; benchmark construction)"
             },
             {
               "id": "fnd5-ops",
               "text": "Ops: finalize referral lists; warm intros for big-tech"
             },
             {
-              "id": "fnd5-exp",
-              "text": "Experimentation: exact vs asymptotic tests; what breaks when expected cell counts are small; power analysis. Rehearse your own significance suite ALOUD — it is worth nothing unsaid"
-            },
-            {
               "id": "fnd5-scratch",
               "text": "From scratch: NumPy (linreg, logreg, k-means, 2-layer NN w/ manual backprop); PyTorch (training loop, multi-head self-attention, transformer block)"
-            },
-            {
-              "id": "fnd5-res",
-              "text": "Research depth: the report->core dilution funnel — explain the negative result and the structural fix without defensiveness"
             },
             {
               "id": "fnd5-hp703",
@@ -436,20 +412,20 @@
               "text": "Ops: prep big-tech new-grad application materials; referral asks going out"
             },
             {
-              "id": "fnd6-exp",
-              "text": "ML breadth + experimentation: rapid-fire self-quiz across both; fix weak spots"
+              "id": "fnd6-ml",
+              "text": "ML breadth: rapid-fire self-quiz; fix the weak spots"
             },
             {
               "id": "fnd6-dl",
               "text": "DL/LLM self-quiz + the debugging drill: a training curve that won't converge — list 10 causes"
             },
             {
-              "id": "fnd6-storyinv",
-              "text": "Behavioral (ONLY pre-Sep soft-skill task, ~30 min): LIST 6-8 candidate stories from the anchors in interview-prep.md. No drafting, no STAR shape, no LP mapping"
+              "id": "fnd6-sd",
+              "text": "System design (ramp): Design #4 — multi-agent verification loop (MERMAID/CRAFT territory: orchestration, tool use, verifier-guided generation); Design #5 — recommendation ranking or fraud/anomaly, whichever your targets weight"
             },
             {
-              "id": "fnd6-res",
-              "text": "Research depth: full technical Q&A with a labmate who will push back. Content only — delivery polish comes in September"
+              "id": "fnd6-storyinv",
+              "text": "Behavioral (ONLY pre-Sep soft-skill task, ~30 min): LIST 6-8 candidate stories from the anchors in interview-prep.md. No drafting, no STAR shape, no LP mapping"
             },
             {
               "id": "fnd6-gr200",
@@ -505,7 +481,7 @@
             },
             {
               "id": "fnd6-ms",
-              "text": "Foundation done (technical): coding fluent, ML breadth + experimentation solid, 5 system designs done, research depth bulletproof, referrals warm, materials ready",
+              "text": "Foundation done (technical): coding fluent, ML breadth + DL/LLM depth solid, ~5 system designs done, referrals warm, materials ready",
               "milestone": true
             }
           ]
@@ -611,6 +587,10 @@
             {
               "id": "btw2-answers",
               "text": "Draft the May-2027 timeline answer and the venue-question answer — clean and non-defensive"
+            },
+            {
+              "id": "btw2-exp-rehearsal",
+              "text": "Experimentation rehearsal (LOWEST priority, first to cut): say the A/B-testing and significance-suite answers aloud once — the exact-inference work is rare but worth nothing unsaid. Rehearsal, not learning; ~30 min. See experimentation-primer.md"
             },
             {
               "id": "btw2-d262",
