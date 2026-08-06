@@ -81,8 +81,15 @@ protect **coding** and **experimentation**; those two compound.
   case. Keep a `failed_list`; redo every failure one week later. Premium company-tagged +
   frequency-sorted from September.
 - **ML breadth:** the bar is **explain it in 2–3 minutes and say when it breaks**, out loud.
-- **Experimentation & statistics:** rehearse as *spoken answers*. The goal is converting work you
-  already did into fluent 2-minute explanations — the thesis benchmark is the worked example.
+- **Experimentation & statistics:** **learn the applied A/B-testing layer first**
+  ([experimentation-primer.md](experimentation-primer.md)) — the stats foundation is already yours,
+  but the online-experiment vocabulary (unit of randomization, MDE, guardrails, novelty, clustering)
+  is new. *Then* rehearse as spoken answers, converting the thesis benchmark into fluent 2-minute
+  explanations.
+
+> **Learn before you drill.** Spoken-answer drilling makes *known* material fluent; it does not
+> teach new material. For any area where you're rusty or new, do a study pass first, then drill.
+> (Learned the hard way on experimentation, 2026-08-06.)
 - **DL / NLP / LLM depth:** transformers cold, PEFT/LoRA, RAG internals, decoding, eval design,
   multi-agent orchestration and its failure modes.
 - **System design (ML):** one framework, every time — **problem framing → data → features → model
